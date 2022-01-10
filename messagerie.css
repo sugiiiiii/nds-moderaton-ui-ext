@@ -1,1 +1,32 @@
-/*  */
+/* Messagerie */
+.sg-box.sg-box--light.sg-box--border.sg-box--padding-m.brn-layout-box {
+    border: none !important;
+}
+.brn-messages__conversations {
+    width: 380px;
+    height: 70vh !important;
+    max-width: 380px;
+}
+.dock-box {
+    height: 70vh !important;
+}
+.sg-content-box__content--full, ul.sg-list.js-conversations.brn-messages__list {
+    height: 70vh !important;
+    max-height: 70vh !important;
+}
+
+.brn-messages__chatbox.brn-chatbox.js-chatbox {
+    height: 80vh !important;
+}
+
+.sg-layout__container.js-main-container {
+    min-width: 100% !important;
+    margin: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.brn-chatbox__chat {
+    max-height: 70vh !important;
+}
+
