@@ -696,3 +696,11 @@ textarea.text-reason {
     margin-top: 0px !important;
     margin-bottom: 8px !important;
 }
+
+
+/* Pop up Notifications & Friends */
+
+.NestedUserPanelBubble__panel--x3Jaa {
+    width: 28vw !important;
+    height: 85vh !important;
+}
