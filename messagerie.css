@@ -1,0 +1,209 @@
+
+.color-container {
+    position: relative;
+    overflow: hidden;
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0.7px rgba(0, 0, 0, 0.2);
+
+    > input {
+        position: absolute;
+        right: -30px;
+        top: -10px;
+        width: 80px;
+        height: 50px;
+        border: none;
+    }
+}
+
+
+
+
+  
+  section.brn-messages__conversations {
+    > div.sg-content-box
+      > div.sg-content-box__header.dock-box__top
+      > h2:nth-child(2) {
+      margin-left: auto;
+    }
+  
+    .sg-media__aside > .sg-text--xxlarge {
+      line-height: 0.85em;
+    }
+  
+    ul.js-conversations {
+      &:empty:after {
+        content: attr(data-empty-message);
+        border: 1px solid #eee;
+        padding: 15px 10px;
+        position: relative;
+        display: block;
+      }
+  
+      > li {
+        &.pinned .js-pin {
+          border-radius: 50%;
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+  
+        &:not(.pinned) .js-pin {
+          display: none;
+        }
+  
+        &:hover .js-pin {
+          display: inline-block;
+        }
+  
+        &.js-group-conversation {
+          .js-message-content {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+  
+        .js-pin {
+          position: absolute;
+          right: 0;
+          top: -8px;
+          height: 26px;
+          padding: 2px;
+  
+          * {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+  
+  section.brn-messages__chatbox
+    > div.sg-content-box
+    > div.sg-content-box__header {
+    align-items: start;
+  
+    /* margin-bottom: 10px; */
+  
+    .userTag {
+      height: 24px;
+      display: flex;
+  
+      .sg-bubble {
+        z-index: 3;
+        top: -13px;
+        margin-left: 6px;
+        width: max-content;
+        height: fit-content;
+      }
+    }
+  
+    .sg-actions-list .sg-actions-list__hole {
+      float: left;
+      clear: both;
+  
+      &.sg-actions-list__hole--to-right {
+        float: right;
+      }
+  
+      &.userNoteBox {
+        width: 100%;
+        display: inline-block;
+  
+        textarea {
+          resize: none;
+          position: relative;
+          z-index: 2;
+          width: 50%;
+          height: 32px;
+  
+          /* margin-top: 3px; */
+          overflow: hidden;
+          float: right;
+  
+          &:focus {
+            width: 100%;
+            height: 15em;
+            overflow: auto;
+            color: #000;
+          }
+  
+          &:not(:focus) {
+            padding-top: 4px;
+          }
+  
+          &.changed {
+            border: 3px solid #a7e6c6;
+          }
+        }
+      }
+    }
+  }
+  
+  .js-modal {
+    .group-header {
+      > .sg-actions-list__hole {
+        &:nth-child(1) {
+          display: flex;
+  
+          > input {
+            color: inherit;
+          }
+        }
+  
+        &:nth-child(2) {
+          width: 42%;
+        }
+  
+        .js-first-letter {
+          text-shadow: 0 0 0.5px;
+        }
+      }
+    }
+  
+    div.sg-card {
+      > div.sg-card__hole {
+        display: flex;
+        flex-direction: column;
+  
+        > ul {
+          min-height: 20em;
+          max-height: 20em;
+          max-height: -webkit-fill-available;
+          margin-top: 1em;
+          border-radius: 3px;
+          padding: 5px;
+          height: 100%;
+          overflow-x: hidden;
+          overflow-y: auto;
+          flex: 1;
+          display: inline-block;
+        }
+  
+        &:nth-child(1) > ul {
+          background-color: #fff;
+        }
+  
+        &:nth-child(2) > ul {
+          background-color: #e2e8ff;
+        }
+      }
+    }
+  }
+  
+  .ui-selectable {
+    -ms-touch-action: none;
+    touch-action: none;
+  }
+  
+  .ui-selectable-helper {
+    position: absolute;
+    z-index: 100;
+    border: 1px dotted black;
+  }
+  
+  .ui-sortable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+  }
