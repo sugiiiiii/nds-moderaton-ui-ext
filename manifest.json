@@ -1,0 +1,16 @@
+{
+    "name": "NDS Updated Moderation",
+    "description" : "Rendons l'interface de modération plus agréable",
+    "version": "7.5",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "css": ["clean.css"],
+        "matches": ["https://nosdevoirs.fr/*"]
+    }],
+    "page_action": {
+        "default_icon": "images/on.png",
+        "default_title": "icon"
+    }
+
+}
+
