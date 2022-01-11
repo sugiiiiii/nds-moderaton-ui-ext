@@ -10,7 +10,7 @@
 .dock-box {
     height: 70vh !important;
 }
-.sg-content-box__content--full, ul.sg-list.js-conversations.brn-messages__list {
+.js-conversations-panel .sg-content-box__content--full, ul.sg-list.js-conversations.brn-messages__list {
     height: 70vh !important;
     max-height: 70vh !important;
 }
