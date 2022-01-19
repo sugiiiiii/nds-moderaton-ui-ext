@@ -534,6 +534,10 @@ span.subcategories[style="display: inline;"] > input {
     margin-bottom: .3em;
     box-shadow: 0.5px 1px .8px #ebebeb !important;
     transition: 200ms;
+    /* Version 8.5 */
+    line-height: 20px;
+    font-weight: 600;
+    text-shadow: none !important;
 }
 
 span.subcategories[style="display: inline;"] > input:hover {
