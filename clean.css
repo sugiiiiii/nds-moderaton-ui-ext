@@ -708,3 +708,8 @@ textarea.text-reason {
     width: 28vw !important;
     height: 85vh !important;
 }
+
+/* Plus de question à propos de X */
+[data-testid="newest_questions"] {
+    display: none;
+}
