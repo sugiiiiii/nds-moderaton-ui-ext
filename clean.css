@@ -391,7 +391,7 @@ button.reset.btn:hover i.icon.icon-remove {
 }
 
 .footer > .row:first-child::before {
-    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/warning.svg');
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/reported.svg');
     height: 15px;
     width: 15px;
     float: left;
@@ -401,7 +401,7 @@ button.reset.btn:hover i.icon.icon-remove {
 }
 
 .footer > .row:last-child::before {
-    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/warning.svg');
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/reporter.svg');
     height: 15px;
     width: 15px;
     float: left;
