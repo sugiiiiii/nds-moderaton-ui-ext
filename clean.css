@@ -15,25 +15,25 @@
 
 /* Interface du haut */
 #html .mint #main-panel .menu-right #panel-messages>a::before {
-    content: url('https://leaguehub.net/images/NDS/envelope-alt.svg') !important;
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/envelope-alt.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 #html .mint #main-panel .menu-right #panel-notifications>a::before {
-    content: url('https://leaguehub.net/images/NDS/bell.svg') !important;
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/bell.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 #html .mint #main-panel .menu-right #community_new>a::before {
-    content: url('https://leaguehub.net/images/NDS/user.svg') !important;
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/user.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 .mint-icon-search::before, .mint-sticker--search::before, .mint-label__icon--search::before {
-    content: url('https://leaguehub.net/images/NDS/search.svg') !important;
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/search.svg') !important;
     height: auto !important;
     width: 20px !important;
 }
@@ -202,7 +202,7 @@ div.moderation > .title {
 
 /* Bouclier pour ouvrir la modération */
 button.moderation-start i.icon.icon-moderation {
-    background-image: url('https://i.postimg.cc/bYSZ5mSy/shield-exclamation.png') !important;
+    background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/shield-exclamation.svg') !important;
     zoom: 1.3 !important;
     height: 16px !important;
     width: 16px !important;
@@ -212,7 +212,7 @@ button.moderation-start i.icon.icon-moderation {
 }
 /* Bouclier pour modération gérée par autre modo */
 button.moderation-start.disabled i.icon.icon-moderation {
-    background-image: url('https://i.postimg.cc/2yW3B5Nb/shield-check.png') !important;
+    background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/shield-check.svg') !important;
     zoom: 1.3 !important;
     height: 16px !important;
     width: 16px !important;
@@ -353,7 +353,7 @@ button.reset.btn {
 }
 
 button.reset.btn i.icon.icon-remove {
-    background-image: url('https://leaguehub.net/images/NDS/redo-black.svg') !important;
+    background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/redo.svg') !important;
     zoom: 1 !important;
     opacity: 65%;
     height: 16px !important;
@@ -391,7 +391,7 @@ button.reset.btn:hover i.icon.icon-remove {
 }
 
 .footer > .row:first-child::before {
-    content: url('https://leaguehub.net/images/NDS/report.svg');
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/warning.svg');
     height: 15px;
     width: 15px;
     float: left;
@@ -401,7 +401,7 @@ button.reset.btn:hover i.icon.icon-remove {
 }
 
 .footer > .row:last-child::before {
-    content: url('https://leaguehub.net/images/NDS/reporter.svg');
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/warning.svg');
     height: 15px;
     width: 15px;
     float: left;
