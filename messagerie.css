@@ -1,6 +1,6 @@
 /* Messagerie */
 .sg-box.sg-box--light.sg-box--border.sg-box--padding-m.brn-layout-box {
-    border: none !important;
+    border: transparent !important;
 }
 .brn-messages__conversations {
     width: 380px;

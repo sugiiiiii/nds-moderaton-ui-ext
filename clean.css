@@ -721,3 +721,21 @@ textarea.text-reason {
 .brn-challenge-confetti {
     display: none;
 }
+
+
+/* Profil via la vieille interface */
+.personal_info > a {
+    background-color: var(--blue-nds);
+    color: white !important;
+    padding-inline: 2em;
+    padding-block: 0.8em !important;
+    margin-top: 1.5em;
+    border-radius: 30px;
+    transition: 200ms;
+}
+
+.personal_info > a:hover {
+    background-color: #9ed7fd;
+    color: var(--blue-nds) !important;
+    transition: 200ms;
+}
