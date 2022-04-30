@@ -202,7 +202,7 @@ div.moderation > .title {
 
 /* Bouclier pour ouvrir la modération */
 button.moderation-start i.icon.icon-moderation {
-    background-image: url('https://leaguehub.net/images/NDS/shield-exclamation.svg') !important;
+    background-image: url('https://i.postimg.cc/bYSZ5mSy/shield-exclamation.png') !important;
     zoom: 1.3 !important;
     height: 16px !important;
     width: 16px !important;
@@ -212,7 +212,7 @@ button.moderation-start i.icon.icon-moderation {
 }
 /* Bouclier pour modération gérée par autre modo */
 button.moderation-start.disabled i.icon.icon-moderation {
-    background-image: url('https://leaguehub.net/images/NDS/shield-check.svg') !important;
+    background-image: url('https://i.postimg.cc/2yW3B5Nb/shield-check.png') !important;
     zoom: 1.3 !important;
     height: 16px !important;
     width: 16px !important;
@@ -711,5 +711,13 @@ textarea.text-reason {
 
 /* Plus de question à propos de X */
 [data-testid="newest_questions"] {
+    display: none;
+}
+.js-react-newest-questions {
+    display: none;
+}
+
+/* Le défi en haut de la homepage */
+.brn-challenge-confetti {
     display: none;
 }
