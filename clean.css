@@ -15,25 +15,25 @@
 
 /* Interface du haut */
 #html .mint #main-panel .menu-right #panel-messages>a::before {
-    content: url(https://leaguehub.net/images/NDS/envelope-alt.svg) !important;
+    content: url('https://leaguehub.net/images/NDS/envelope-alt.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 #html .mint #main-panel .menu-right #panel-notifications>a::before {
-    content: url(https://leaguehub.net/images/NDS/bell.svg) !important;
+    content: url('https://leaguehub.net/images/NDS/bell.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 #html .mint #main-panel .menu-right #community_new>a::before {
-    content: url(https://leaguehub.net/images/NDS/user.svg) !important;
+    content: url('https://leaguehub.net/images/NDS/user.svg') !important;
     height: auto !important;
     width: 25px !important;
 }
 
 .mint-icon-search::before, .mint-sticker--search::before, .mint-label__icon--search::before {
-    content: url(https://leaguehub.net/images/NDS/search.svg) !important;
+    content: url('https://leaguehub.net/images/NDS/search.svg') !important;
     height: auto !important;
     width: 20px !important;
 }
@@ -353,7 +353,7 @@ button.reset.btn {
 }
 
 button.reset.btn i.icon.icon-remove {
-    background-image: url(https://leaguehub.net/images/NDS/redo-black.svg) !important;
+    background-image: url('https://leaguehub.net/images/NDS/redo-black.svg') !important;
     zoom: 1 !important;
     opacity: 65%;
     height: 16px !important;
@@ -401,7 +401,7 @@ button.reset.btn:hover i.icon.icon-remove {
 }
 
 .footer > .row:last-child::before {
-    content: url(https://leaguehub.net/images/NDS/reporter.svg);
+    content: url('https://leaguehub.net/images/NDS/reporter.svg');
     height: 15px;
     width: 15px;
     float: left;
