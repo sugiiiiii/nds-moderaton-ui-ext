@@ -722,6 +722,9 @@ textarea.text-reason {
     display: none;
 }
 
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
 
 /* Profil via la vieille interface */
 .personal_info > a {
@@ -738,4 +741,83 @@ textarea.text-reason {
     background-color: #bee5ff;
     color: var(--blue-nds) !important;
     transition: 200ms;
+}
+
+/* Ajouter à mes amis & Envoyer un message privé */
+/* Zone qui contient les deux boutons */
+div.pw {
+    text-align: center;
+    line-height: 2em;
+}
+/* Faire disparaitre les deux moches images actuelles */
+.friends > img, div.pw div:last-child > img {
+    display: none;
+}
+/* Ajouter une nouvelle image avant le texte */
+.friends > a:before {
+    content: " " !important;
+    width: 15px !important;
+    height: 15px !important;
+    display: inline-block;
+    background-size: 15px 15px !important;
+    margin-right: 0.5em;
+    vertical-align: text-bottom;
+    background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/user-plus.svg') !important;
+}
+/* Ajouter une nouvelle image avant le texte */
+div.pw div:last-child a:before {
+    content: " " !important;
+    width: 15px !important;
+    height: 15px !important;
+    display: inline-block;
+    background-size: 15px 15px !important;
+    margin-right: 0.5em;
+    vertical-align: text-bottom;
+    background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/send-message.svg') !important;
+}
+
+/* Bouton "Voir plus d'informations" */
+span.pseudolink.user-more-data {
+    border: 2px #FF8073 solid;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 30px;
+}
+span.pseudolink.user-more-data:hover {
+    background-color: #FF8073;
+    transition: 200ms;
+    color: white !important;
+}
+
+/* Bouton "OK" pour les bannissements */
+input.btn.mint-button-secondary.mint-button-secondary--small.mint-button-secondary--peach-inverse {
+    padding-block: 1em !important;
+    vertical-align: middle;
+    height: 100%;
+    border-radius: 30px;
+}
+/* Supprimer l'avatar */
+input.onlylink {
+    margin-left: 0px;
+    /* Sans raison, cet item avec une marge de 2 px */
+}
+
+/* Feedback au survol des matières aidées */
+.helped_subjects a {
+    background-color: #d6f1ff;
+    border-radius: 30px;
+    padding-inline: .8em;
+    padding-block: .5em;
+    margin-top: 0px !important;
+    transition: 200ms;
+}
+.helped_subjects a:hover {
+    background-color: #f0f3f6;
+    transition: 200ms;
+}
+#main-left .personal_info .helped_subjects li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0px !important;
 }
