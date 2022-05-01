@@ -735,7 +735,7 @@ textarea.text-reason {
 }
 
 .personal_info > a:hover {
-    background-color: #9ed7fd;
+    background-color: #bee5ff;
     color: var(--blue-nds) !important;
     transition: 200ms;
 }
