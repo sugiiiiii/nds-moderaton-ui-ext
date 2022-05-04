@@ -10,7 +10,7 @@
 }
 
 .content {
-    background-color: none !important;
+    background-color: white !important;
 }
 
 /* Interface du haut */
@@ -136,10 +136,9 @@ div#flash-msg, div.flash-msg {
 /* Temps écoulé */
 .msg.info {
     width: fit-content;
-    margin: auto;
     padding: .5em 4em .5em 4em;
     border-radius: 30px;
-    margin-top: 10px;
+    margin: 10px auto auto;
     color: black;
     text-shadow: none !important;
     opacity: 100% !important;
@@ -157,7 +156,7 @@ img.close {
 .sg-flash__message {
     width: fit-content !important;
     border-radius: 30px;
-    margin: 0px !important;
+    margin: 0 !important;
     padding: .5em 2.5em .5em 2.5em !important;
     margin-top: .7em !important;
 }
@@ -312,8 +311,8 @@ div.options {
 }
 .span2, .span5 {
     width: auto !important;
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 select.subjects {
@@ -349,7 +348,7 @@ button.reset.btn {
     height: 2em;
     background-color: white;
     text-align: center;
-    padding: 0px !important;
+    padding: 0 !important;
 }
 
 button.reset.btn i.icon.icon-remove {
@@ -362,7 +361,7 @@ button.reset.btn i.icon.icon-remove {
     background-repeat: no-repeat !important;
 }
 button.reset:hover {
-    transform: rotate(15%);
+    transform: rotate(15deg);
 }
 button.reset:hover::after {
     content: 'Supprimer les filtres';
@@ -413,7 +412,7 @@ button.reset.btn:hover i.icon.icon-remove {
 
 ::-webkit-scrollbar {
     width: 6px;
-    height: 0px;
+    height: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -525,14 +524,11 @@ span.subcategories[style="display: inline;"] {
 span.subcategories[style="display: inline;"] > input {
     background-color: white !important;
     border-radius: 15px !important;
-    padding-left: 1.5em !important;
-    padding-right: 1.5em !important;
-    padding-top: .3em !important;
-    padding-bottom: .3em !important;
+    padding: .3em 1.5em !important;
     border: none !important;
     margin-right: .5em;
     margin-bottom: .3em;
-    box-shadow: 0.5px 1px .8px #ebebeb !important;
+    box-shadow: 1px 1px 1px #ebebeb !important;
     transition: 200ms;
     /* Version 8.5 */
     line-height: 20px;
@@ -541,7 +537,7 @@ span.subcategories[style="display: inline;"] > input {
 }
 
 span.subcategories[style="display: inline;"] > input:hover {
-    box-shadow: 0px 0px 3px 1.2px #ebebeb !important;
+    box-shadow: 0 0 3px 1px #ebebeb !important;
     z-index: 10;
     transition: 200ms;
 }
@@ -584,7 +580,7 @@ header.toplayer-header {
 }
 
 #moderate-task-toplayer .toplayer-header .mod-info {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 #moderate-task-toplayer .toplayer-header {
@@ -659,7 +655,7 @@ header.toplayer-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
-    gap: 5px 0px;
+    gap: 5px 0;
     grid-template-areas:
         "textarea-reason textarea-reason"
         "btn_zone btn_zone"
@@ -676,7 +672,6 @@ header.toplayer-header {
 .action-to-correct.boxxy.opened > div p:nth-child(3) > button:first-child {
     margin: auto !important;
     width: 100%;
-    margin: auto !important;
     text-align: center !important;
 }
 
@@ -697,7 +692,7 @@ textarea.text-reason {
 
 /* Modération commentaire */
 .moderation-comments .boxxy.text {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     margin-bottom: 8px !important;
 }
 
@@ -798,7 +793,7 @@ input.btn.mint-button-secondary.mint-button-secondary--small.mint-button-seconda
 }
 /* Supprimer l'avatar */
 input.onlylink {
-    margin-left: 0px;
+    margin-left: 0;
     /* Sans raison, cet item avec une marge de 2 px */
 }
 
@@ -808,7 +803,7 @@ input.onlylink {
     border-radius: 30px;
     padding-inline: .8em;
     padding-block: .5em;
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     transition: 200ms;
 }
 .helped_subjects a:hover {
@@ -819,5 +814,5 @@ input.onlylink {
     display: inline-block;
     width: 100%;
     margin-bottom: 0.5em;
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
