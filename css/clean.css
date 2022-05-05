@@ -1,16 +1,8 @@
 
 :root {
-    --blue-nds : #4FB3F6;
+    --blue-nds : rgb(79, 179, 246);
     --green-nds : #53CF92;
     --yellow-nds : #ffc400;
-}
-
-#html body.mint {
-    background: white !important;
-}
-
-.content {
-    background-color: white !important;
 }
 
 /* Interface du haut */
@@ -300,7 +292,6 @@ div.options {
 .content > .body > p {
     margin-top: .6em !important;
     opacity: 65% !important;
-    color: black !important;
 }
 
 /*  -------------- Header --------------- */
@@ -458,11 +449,6 @@ button.reset.btn:hover i.icon.icon-remove {
     padding: 1.2em !important;
     margin-bottom: 1.3em;
     border-radius: 15px !important;
-    background-color: #f7f7f7 !important;
-}
-
-#toplayer .contener-center.mod .moderation-toplayer .moderation-task.reported .boxxy.text {
-    background-color: #fbeee2;
 }
 
 .contener-center.mod {

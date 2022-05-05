@@ -1,6 +1,21 @@
 function main() {
+    const dark_css_url = chrome.runtime.getURL("css/dark.css");
+    addCss(dark_css_url);
+    if (!localStorage.getItem('theme')) {
+        console.log("create local storage");
+        localStorage.setItem('theme', 'light');
+    } else if (localStorage.getItem('theme') === "dark") {
+        document.getElementById("darkmode").disabled = false;
+    }
 
-    const nav = document.querySelector("body > div.js-page-wrapper > div > nav > div.brn-moderation-panel__content.sg-box.sg-box--padding-m.sg-box--shadow.js-moderation-panel-content > div > div.sg-content-box__content > div")
+    let nav;
+    if (location.href === "https://nosdevoirs.fr/" || location.href === "https://nosdevoirs.fr/messages") {
+        nav = document.querySelector("body > div.js-page-wrapper > div > nav > div.brn-moderation-panel__content.sg-box.sg-box--padding-m.sg-box--shadow.js-moderation-panel-content > div > div.sg-content-box__content > div")
+    } else if (location.href.includes("https://nosdevoirs.fr/tasks/") || location.href.includes("https://nosdevoirs.fr/moderators/")) {
+        nav = document.querySelector("#main-panel > div.mint-header__container > div.mint-header__left");
+    } else {
+        return;
+    }
 
     const span_button_theme = document.createElement("span");
     span_button_theme.id = "span-button-theme";
@@ -19,17 +34,10 @@ function main() {
     label_button_theme.className = "switch";
     label_button_theme.htmlFor = "theme-button";
     span_button_theme.appendChild(label_button_theme);
-    const dark_css_url = chrome.runtime.getURL("css/dark.css");
-    addCss(dark_css_url);
 
-    if (!localStorage.getItem('theme')) {
-        console.log("create local storage")
-        localStorage.setItem('theme', 'light')
-    } else if (localStorage.getItem('theme') === "dark") {
-        document.getElementById("darkmode").disabled = false;
+    if (localStorage.getItem('theme') === "dark") {
         button_theme.checked = true;
     }
-
 }
 
 function addCss(fileName) {
@@ -48,10 +56,10 @@ function addCss(fileName) {
 function change_theme() {
     if (document.getElementById("darkmode").disabled) {
         document.getElementById("darkmode").disabled = false;
-        localStorage.setItem("theme", "dark")
+        localStorage.setItem("theme", "dark");
     } else if (!document.getElementById("darkmode").disabled) {
         document.getElementById("darkmode").disabled = true;
-        localStorage.setItem("theme", "light")
+        localStorage.setItem("theme", "light");
     }
 
 }
