@@ -162,6 +162,11 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
     background-color:var(--dark-footer-back-color);
 }
 
+/* tooltip-content */
+div[data-testid="tooltip_content"] * {
+    background-color:var(--dark-light-color);
+}
+
 /* --------- Center Application - End --------- */
 
 

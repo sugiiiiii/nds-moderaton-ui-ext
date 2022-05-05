@@ -22,6 +22,14 @@ function main() {
     const dark_css_url = chrome.runtime.getURL("css/dark.css");
     addCss(dark_css_url);
 
+    if (!localStorage.getItem('theme')) {
+        console.log("create local storage")
+        localStorage.setItem('theme', 'light')
+    } else if (localStorage.getItem('theme') === "dark") {
+        document.getElementById("darkmode").disabled = false;
+        button_theme.checked = true;
+    }
+
 }
 
 function addCss(fileName) {
@@ -40,8 +48,10 @@ function addCss(fileName) {
 function change_theme() {
     if (document.getElementById("darkmode").disabled) {
         document.getElementById("darkmode").disabled = false;
+        localStorage.setItem("theme", "dark")
     } else if (!document.getElementById("darkmode").disabled) {
         document.getElementById("darkmode").disabled = true;
+        localStorage.setItem("theme", "light")
     }
 
 }
