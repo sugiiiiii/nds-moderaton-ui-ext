@@ -3,7 +3,7 @@
     --dark-light-color : #282828;
     --dark-global-text-color : #FFFFFF;
     --dark-global-text-hover-color : #000000;
-    --dar-rank-badge-color : #d5af3f;
+    --dark-rank-badge-color : #d5af3f;
     --dark-success-badge-color : #262626;
     --dark-game-box-color : #5e5e5e;
     --dark-points-box-color: #3a3a3a;
@@ -18,6 +18,26 @@
 body {
     background-color:var(--dark-back-color);
     color:var(--dark-global-text-color);
+}
+
+/* Bordures des zones de la homepage */
+.sg-box--border-color-gray-20 {
+    border-color: var(--dark-light-color) !important;
+}
+
+/* Bordures des zones des devoirs */
+.brn-feed-item-wrapper {
+    border-color: var(--dark-light-color) !important;
+}
+
+/* Séparateurs avant les devoirs */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-flex.sg-flex--column.sg-flex--margin-bottom-m, body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-horizontal-separator.sg-horizontal-separator--gray-40 {
+    display: none;
+}
+
+/* Quelques séparateurs */
+.Header-module__subnav--1o8Ox, .sg-horizontal-separator, .GameBoxContainer-module__container--xqNiY>*+* {
+    border-color: var(--dark-light-color);
 }
 
 /* --------- Bordures - End --------- */
@@ -43,43 +63,47 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
     color:var(--dark-global-text-color);
 }
 
+/* Barre de recherche */
+input[type=search].sg-search__input {
+    background-color: var(--dark-back-color);
+    border: var(--dark-light-color) 2px solid;
+}
+
 /* --------- Navbar - End --------- */
 
 
-/* --------- Center Application - Strart --------- */
+/* --------- Center Application - Start --------- */
 
 .sg-layout__container:not(.sg-layout__container--full-page) {
     background:var(--dark-back-color);
     color:var(--dark-global-text-color);
 }
 
-/* texte de la boxe */
+/* texte de la box */
 .sg-text:not(
-
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(2) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(4) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(6) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box__content.sg-content-box__content--spaced-top-large.sg-content-box__content--spaced-bottom-xlarge > div.sg-actions-list.sg-actions-list--to-right.sg-actions-list--to-top > div > div > div,
-
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div.sg-text.sg-text--xsmall.sg-text--bold,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div.sg-text.sg-text--xsmall.sg-text--bold,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div.sg-text.sg-text--xsmall.sg-text--bold,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div.sg-text.sg-text--xsmall.sg-text--bold,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(3),
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div.sg-text.sg-text--xsmall.sg-text--bold,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div:nth-child(3)
+div.sg-animation-fade-in-fast > div > div:nth-child(2) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div.sg-animation-fade-in-fast > div > div:nth-child(4) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div.sg-animation-fade-in-fast > div > div:nth-child(6) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box__content.sg-content-box__content--spaced-top-large.sg-content-box__content--spaced-bottom-xlarge > div.sg-actions-list.sg-actions-list--to-right.sg-actions-list--to-top > div > div > div,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(3),
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div:nth-child(3)
 ) {
     color:var(--dark-global-text-color);
 }
 
-/* boxe nombre de points */
+/* box nombre de points */
 .sg-counter--with-icon {
     background:var(--dark-points-box-color);
 }
@@ -101,7 +125,7 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
     border: 2px solid var(--dark-global-text-color);
 }
 
-/* boxe "Toutes les matières" */
+/* box "Toutes les matières" */
 .brn-subject-list__subject--active {
     background-color:var(--dark-global-box-color);
 }
@@ -120,20 +144,65 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
     background:var(--dark-global-box-hover-color) !important;
 }
 
+/* Barre de progression autour de l'avatar */
+canvas.GameBoxProgressBar-module__container--3ukwx {
+    display: none;
+}
+/* L'avatar en question */
+.sg-avatar--l {
+    width: 85%;
+    height: 85%;
+}
+
+/* La fenêtre flottante au survol du rang */
+div[data-testid="tooltip_content"] * {
+    border-radius: 8px !important;
+}
+
+/* Les indicateurs à l'ouverture de tooltips (info bulles au survol) */
+.sg-bubble--left::before, .sg-bubble--left::after {
+    border-right-color: var(--dark-light-color) !important;
+}
+.sg-bubble--right::before, .sg-bubble--right::after {
+    border-left-color: var(--dark-light-color) !important;
+}
+.sg-bubble--top::before, .sg-bubble--top::after {
+    border-bottom-color: var(--dark-light-color) !important;
+}
+.sg-bubble--bottom::before, .sg-bubble--bottom::after {
+    border-top-color: var(--dark-light-color) !important;
+}
+
+/* Icon du (B) des crédits */
+div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-space-x-xs > div:nth-child(1) > div > div > div > div > div > div > div.sg-flex.sg-flex--margin-right-xxs > div > svg {
+    border-radius: 24px 0px 0px 24px;
+    background-color: transparent !important;
+}
+
+/* Section "Ton influence" */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) {
+    display: none;
+}
+
+/* Section "Défis" */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(2) {
+    display: none;
+}
+
+/* Badge de rang */
+.sg-label--yellow-20 {background-color: rgb(255 196 0 / 20%);}
+.sg-label--yellow-20 > div {color: #ffc400 !important;}
+
+/* Badges des succès */
+.sg-label--indigo-20 {background-color: rgba(79, 179, 246, 0.20);}
+.sg-label--indigo-20 div {color: rgba(79, 179, 246, 1) !important;}
+.sg-text.sg-text--small.sg-text--bold.sg-cursor-pointer {color: rgba(79, 179, 246, 1) !important;}
+
 /* Bouton 'Voir mes succès' */
 .GameBoxLink-module__container--IS_la:hover {
     background:var(--dark-global-box-hover-color);
 }
 
-/* boxe de badge de rang */
-.sg-label__text {
-    color:var(--dark-global-text-hover-color) !important;
-}
-
-/* boxes de succès supplémentaire */
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-flex--wrap.sg-space-y-xxs > ul > li:nth-child(3) > a > div > div > div {
-    color:var(--dark-global-text-hover-color) !important;
-}
 
 /* text headline */
 .sg-headline:not(
@@ -170,6 +239,17 @@ div[data-testid="tooltip_content"] * {
 /* --------- Center Application - End --------- */
 
 
+
+/* --------- Liste des devoirs - Start --------- */
+
+/* Bulle "Regardent" et "Résolu par" */
+.brn-observing-user, .brn-answerer {
+    border: var(--dark-back-color) 2px solid !important;
+}
+
+/* --------- Liste des devoirs - End --------- */
+
+
 /* --------- Footer - Start --------- */
 
 .FooterLayout-module__footer--jB_Pv {
@@ -191,3 +271,4 @@ div[data-testid="tooltip_content"] * {
 }
 
 /* --------- Admin side panel - End --------- */
+
