@@ -1,3 +1,188 @@
-* {
-    color: #53CF92;
+:root {
+    --dark-back-color : #1c1c1c;
+    --dark-light-color : #282828;
+    --dark-global-text-color : #FFFFFF;
+    --dark-global-text-hover-color : #000000;
+    --dar-rank-badge-color : #d5af3f;
+    --dark-success-badge-color : #262626;
+    --dark-game-box-color : #5e5e5e;
+    --dark-points-box-color: #3a3a3a;
+    --dark-global-box-color : #303030;
+    --dark-global-box-hover-color : #484848;
+    --dark-footer-back-color: #121212;
+    --dark-admin-panel-back-color: black;
 }
+
+/* --------- Bordures - Start --------- */
+
+body {
+    background-color:var(--dark-back-color);
+    color:var(--dark-global-text-color);
+}
+
+/* --------- Bordures - End --------- */
+
+
+/* --------- Navbar - Start --------- */
+
+/* navbar module */
+.Header-module__header--1fyGw, .Header-module__innerwrap--2PyoE, .Header-module__subnav--1o8Ox {
+    background:var(--dark-back-color);
+    color:var(--dark-global-text-color);
+}
+
+/* 'POSE TA QUESTION', cloche' */
+.sg-button--transparent {
+    color:var(--dark-global-text-color);
+}
+
+/* text link (Pour les parents etc...) */
+body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-child(2) > header > div.Header-module__subnav--1o8Ox > div > div > div > div > div:nth-child(1) > span > a,
+body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-child(2) > header > div.Header-module__subnav--1o8Ox > div > div > div > div > div:nth-child(2) > span > a,
+body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-child(2) > header > div.Header-module__subnav--1o8Ox > div > div > div > div > div:nth-child(3) > span > a {
+    color:var(--dark-global-text-color);
+}
+
+/* --------- Navbar - End --------- */
+
+
+/* --------- Center Application - Strart --------- */
+
+.sg-layout__container:not(.sg-layout__container--full-page) {
+    background:var(--dark-back-color);
+    color:var(--dark-global-text-color);
+}
+
+/* texte de la boxe */
+.sg-text:not(
+
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(2) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(4) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(6) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box__content.sg-content-box__content--spaced-top-large.sg-content-box__content--spaced-bottom-xlarge > div.sg-actions-list.sg-actions-list--to-right.sg-actions-list--to-top > div > div > div,
+
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div.sg-text.sg-text--xsmall.sg-text--bold,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div.sg-text.sg-text--xsmall.sg-text--bold,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div.sg-text.sg-text--xsmall.sg-text--bold,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div.sg-text.sg-text--xsmall.sg-text--bold,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(3),
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div.sg-text.sg-text--xsmall.sg-text--bold,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div:nth-child(3)
+) {
+    color:var(--dark-global-text-color);
+}
+
+/* boxe nombre de points */
+.sg-counter--with-icon {
+    background:var(--dark-points-box-color);
+}
+.GameBoxStatItem-module__label--SsXVy {
+    background:var(--dark-points-box-color);
+}
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-space-x-xs > div:nth-child(1) > div > div > div > div > div > div > div.sg-flex.sg-flex--margin-right-xxs > div > svg {
+    background:var(--dark-back-color);
+    color: white;
+}
+
+/* texte des boutons */
+.sg-button__text {
+    color:var(--dark-global-text-color);
+}
+
+/* bordure des boutons */
+.sg-button--outline {
+    border: 2px solid var(--dark-global-text-color);
+}
+
+/* boxe "Toutes les matières" */
+.brn-subject-list__subject--active {
+    background-color:var(--dark-global-box-color);
+}
+
+/* Icones */
+.sg-subject-icon {
+    color:var(--dark-global-text-color);
+}
+
+/* Selecteurs */
+.sg-select__element {
+    background: transparent;
+    color:var(--dark-global-text-color) !important;
+}
+.sg-select__element:hover {
+    background:var(--dark-global-box-hover-color) !important;
+}
+
+/* Bouton 'Voir mes succès' */
+.GameBoxLink-module__container--IS_la:hover {
+    background:var(--dark-global-box-hover-color);
+}
+
+/* boxe de badge de rang */
+.sg-label__text {
+    color:var(--dark-global-text-hover-color) !important;
+}
+
+/* boxes de succès supplémentaire */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-flex--wrap.sg-space-y-xxs > ul > li:nth-child(3) > a > div > div > div {
+    color:var(--dark-global-text-hover-color) !important;
+}
+
+/* text headline */
+.sg-headline:not(
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div.sg-content-box__content.sg-content-box__content--spaced-bottom > h3
+) {
+    color:var(--dark-global-text-color);
+}
+
+/* Boutons 'inverted' */
+.sg-button--solid-inverted {
+    background:var(--dark-back-color);
+}
+.sg-button--solid-inverted:hover {
+    background:var(--dark-global-box-hover-color) !important;
+}
+
+/* Texte de la jauge de réponses */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-flex--margin-bottom-s > div > div:nth-child(1) > div > div > div.brn-answering-streak__counter-wrapper > div.sg-flex.sg-flex--justify-content-center.sg-flex--align-items-center.brn-answering-streak__counter > div > span,
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-flex--margin-bottom-s > div > div.sg-flex.sg-flex--margin-bottom-l.brn-answering-streak__carousel-wrapper > div > div > div > div > div > div:nth-child(2) > div > div > div.sg-flex.sg-flex--column.sg-flex--align-items-center.sg-flex--margin-top-xs.sg-flex--margin-bottom-s.brn-answering-streak__icon-container > div.sg-flex.sg-flex--margin-top-s > div
+{
+    color:var(--dark-global-text-hover-color);
+}
+
+/* Pop-up selection des matières */
+.sg-toplayer {
+    background-color:var(--dark-footer-back-color);
+}
+
+/* --------- Center Application - End --------- */
+
+
+/* --------- Footer - Start --------- */
+
+.FooterLayout-module__footer--jB_Pv {
+    background-color:var(--dark-footer-back-color);
+}
+
+/* --------- Footer - End --------- */
+
+
+/* --------- Admin side panel - Start --------- */
+
+.brn-moderation-panel__content {
+    background-color:var(--dark-admin-panel-back-color);
+}
+
+/* texte de 'Thème sombre' */
+#span-button-theme {
+    color:var(--dark-global-text-color) !important;
+}
+
+/* --------- Admin side panel - End --------- */

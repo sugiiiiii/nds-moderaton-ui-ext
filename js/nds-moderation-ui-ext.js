@@ -3,10 +3,10 @@ function main() {
     const nav = document.querySelector("body > div.js-page-wrapper > div > nav > div.brn-moderation-panel__content.sg-box.sg-box--padding-m.sg-box--shadow.js-moderation-panel-content > div > div.sg-content-box__content > div")
 
     const span_button_theme = document.createElement("span");
-    span_button_theme.innerText = "Thème sombre:  "
-    span_button_theme.style.color = "#000000"
-    span_button_theme.style.fontSize = ".875rem"
-    nav.appendChild(span_button_theme)
+    span_button_theme.id = "span-button-theme";
+    span_button_theme.textContent = "Thème sombre:  ";
+    span_button_theme.style.fontSize = ".875rem";
+    nav.appendChild(span_button_theme);
 
     const button_theme = document.createElement("input");
     button_theme.type = "checkbox";
