@@ -463,6 +463,10 @@ div[data-testid="tooltip_content"] * {
     color: var(--dark-global-text-color)
 }
 
+#toplayer {
+    background-color: rgb(50 50 50 / 50%);
+}
+
 #html {
     background: var(--dark-back-color);
 }
