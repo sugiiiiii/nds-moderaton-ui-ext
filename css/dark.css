@@ -21,6 +21,10 @@ body {
     color:var(--dark-global-text-color);
 }
 
+#html {
+    background: var(--dark-back-color);
+}
+
 /* Bordures des zones de la homepage */
 .sg-box--border-color-gray-20 {
     border-color: var(--dark-light-color) !important;
@@ -276,24 +280,30 @@ div[data-testid="tooltip_content"] * {
 
 /* --------- Modération - Start --------- */
 
+/* Navbar */
+
 #main-panel {
     background: var(--dark-back-color) !important;
     color: var(--dark-light-color) !important;
     border-bottom: 1px solid var(--dark-global-text-color);
 }
 
+/* background */
 #html .mint {
     background: var(--dark-light-color) !important;
 }
 
+/* application centre */
 #content {
     background: var(--dark-back-color) !important;
 }
 
+/* background application centre */
 #moderation-all .top .sub-header {
     background-color: var(--dark-back-color);
 }
 
+/* card box 'ID' */
 #moderation-all .content .moderation-item .header {
     background-color: var(--dark-card-top-color);
 }
@@ -301,135 +311,143 @@ div[data-testid="tooltip_content"] * {
     background-color: var(--dark-card-top-color) !important;
 }
 
+/* card contenu */
 #moderation-all .content .moderation-item .content {
     background-color: var(--dark-light-color);
 }
 #moderation-all .content .moderation-item .content:hover {
     background-color: var(--dark-card-top-color) !important;
 }
-#moderation-all .content .moderation-item .content:before {
-    background-color: var(--dark-card-top-color) !important;
-}
 
-
+/* text du contenu des cartes */
 .content > .body > p {
     color: var(--dark-global-text-color);
 }
 
+/* selection de matière et catégorie */
 #moderation-all .top .sub-header select {
     background: var(--dark-light-color);
     color: var(--dark-global-text-color);
 }
 
+/* pop-up modération background */
 #toplayer .contener-center .contener .content {
     background-color: var(--dark-back-color);
 }
 
+/* pop-up modération box question */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-task .boxxy {
     background-color: var(--dark-light-color);
 }
 
+/* pop-up modération texte */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-task.reported .boxxy.text {
     background-color: var(--dark-light-color);
     border: 1px solid var(--dark-global-text-color);
 }
 
+/* pop-up modération historique */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-taskline .boxxy {
     background-color: var(--dark-light-color);
 }
 
+/* pop-up modération historique texte */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-taskline .caption {
     color: var(--dark-global-text-color);
 }
 
+/* pop-up modération historique texte description */
 #toplayer .task_lines .description {
     color: var(--dark-global-text-color) !important;
 }
 
+/* pop-up modération réponse */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-response .boxxy {
     background-color: var(--dark-light-color);
 }
 
+/* pop-up modération texte de la réponse */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-response.reported .boxxy.text {
     background-color: var(--dark-light-color);
 }
 
+/* 'Historique > Lycée > ID' */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-task .caption, #toplayer .contener-center.mod .moderation-toplayer .moderation-response .caption {
     color: var(--dark-global-text-color)
 }
 
+/* changement de la couleur de la box quand une réponse/question est supprimée */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-response.removed .boxxy.text {
     background-color: #ad5656;
 }
 
+/* changement de la couleur de la box quand une réponse/question est confirmée */
 #toplayer .contener-center.mod .moderation-toplayer .moderation-task.accepted .boxxy.text {
     background-color: #5f8b4d;
     border: 1px solid #3F8E00;
 }
 
+/* navbar notification */
 #main-panel .menu-right .menu-element#panel-notifications .footer, #main-panel .menu-right .menu-element#panel-notifications .header {
     background-color: var(--dark-back-color);
     color: var(--dark-global-text-color);
 }
-
 #main-panel .menu-right .menu-element#panel-notifications .notifications-container .notifications li.notification {
     background-color: var(--dark-light-color);
     color: var(--dark-global-text-color);
 }
-
 #main-panel .menu-right .menu-element#panel-notifications .notifications-container .notifications li.notification .main .content .message {
     color: var(--dark-global-text-color);
 }
 
+/* navabar messages */
 #main-panel .menu-right #panel-messages .header {
     background-color: var(--dark-back-color);
 }
-
 #main-panel .menu-right #panel-messages .messages-container ul.threads> li .main .content {
     color: var(--dark-global-text-color);
 }
-
 #main-panel .menu-right #panel-messages .messages-container ul.threads> li {
     background-color: var(--dark-light-color);
 }
 
+/* navbar community (logo bonhomme) */
 #main-panel .menu-right li#community_new ul.community, #main-panel .menu-right li#community_new ul.community .header, #html .mint #main-panel .menu-right #community_new .buddy-show-all {
     background-color: var(--dark-light-color);
     color: var(--dark-global-text-color)
 }
-
 #main-panel .menu-right li#community_new ul.community #community > ul li.ui-tabs-selected {
     background-color: var(--dark-back-color);
     color: var(--dark-global-text-color)
 }
 
+/* bouton 'Charger plus' */
 #moderation-all .content .loader {
     background-color: transparent !important;
     color: var(--dark-global-text-color) !important;
     border: 2px solid var(--dark-global-text-color) !important;
 }
 
+/* navbar profile */
 #main-panel .menu-element.current.profile .profile-content {
     background-color: var(--dark-light-color);
     color: var(--dark-global-text-color);
 }
-
 #main-panel .menu-right .footer {
     background-color: var(--dark-back-color);
 }
-
 #html .mint #main-panel .menu-right .menu-element .name span,
 #main-panel .menu-element.current.profile .profile-content .right > a
 {
     color: var(--dark-global-text-color) !important;
 }
-
 #html .mint #main-panel .menu-right .menu-element .name span:hover,
 #main-panel .menu-element.current.profile .profile-content .right > a:hover
 {
     background-color: var(--dark-back-color) !important;
 }
 
+/* panel modération à gauche */
 #moderate-functions-panel .statistics .content-scroll,
 #moderate-functions-panel .content-scroll a,
 #moderate-functions-panel .content-scroll a.bolded,
@@ -437,38 +455,49 @@ div[data-testid="tooltip_content"] * {
 {
     color: var(--dark-global-text-color);
 }
-
 #moderate-functions-panel .content-scroll {
     background-color: var(--dark-back-color);
 }
-
 #moderate-functions-panel .covering-text {
     background-color: var(--dark-light-color);
 }
 #moderate-functions-panel .covering-text:hover {
     background-color: var(--dark-global-box-hover-color);
 }
-
 #moderate-functions-panel .statistics h4 {
     color: #55c35e;
 }
 
+/* moderation footer */
 #html .mint #footer {
     background: var(--dark-footer-back-color);
 }
 
+/* moderation barre de recherche */
 #html .mint .mint-header .mint-input {
     background-color: var(--dark-back-color);
     border: var(--dark-light-color) 2px solid;
     color: var(--dark-global-text-color)
 }
 
+/* filtre lorsque l'on ouvre la moderation d'une question/réponse */
 #toplayer {
     background-color: rgb(50 50 50 / 50%);
 }
 
-#html {
-    background: var(--dark-back-color);
+/* moderation border navbar */
+#html .mint .mint-header {
+    border-bottom: 2px solid var(--dark-global-box-hover-color);
+}
+
+/* moderation border footer */
+#footer {
+    border-color: var(--dark-global-box-hover-color);
+}
+
+/* moderation panel gauche border */
+#moderate-functions-panel .content-scroll {
+    border-color: var(--dark-global-box-hover-color);
 }
 
 /* --------- Modération - End --------- */
