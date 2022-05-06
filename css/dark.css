@@ -266,11 +266,11 @@ div[data-testid="tooltip_content"] * {
 
 
 /* ------------------------------------------------------ */
-/*                Onglet Notifications & MP               */
+/*     Onglet Notifications & MP & Onglet Personnel       */
 /* ------------------------------------------------------ */
 
 /* Fond du pop-up */
-.NestedUserPanelBubble__content--1kSA_ {
+.NestedUserPanelBubble__content--1kSA_, .UserMenuBubble__bubble--151LI {
     background-color: var(--dark-light-color);
 }
 
@@ -296,6 +296,9 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
 }
 .sg-button--solid-light:hover {
     background-color: var(--blue-hover-nds) !important;
+}
+.UserMenuList__item--2gisT:hover {
+    background-color: #232323;
 }
 
 
