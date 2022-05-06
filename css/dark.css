@@ -35,7 +35,10 @@
     background: none !important;
 }
 
-/* --------- Bordures - Start --------- */
+
+/* ------------------------------------------------------ */
+/*                        Bordures                        */
+/* ------------------------------------------------------ */
 
 body {
     background-color:var(--dark-back-color);
@@ -61,10 +64,10 @@ body {
     border-color: var(--dark-light-color);
 }
 
-/* --------- Bordures - End --------- */
 
-
-/* --------- Navbar - Start --------- */
+/* ------------------------------------------------------ */
+/*                         Navbar                         */
+/* ------------------------------------------------------ */
 
 /* navbar module */
 .Header-module__header--1fyGw, .Header-module__innerwrap--2PyoE, .Header-module__subnav--1o8Ox {
@@ -90,41 +93,40 @@ input[type=search].sg-search__input {
     border: var(--dark-light-color) 2px solid;
 }
 
-/* --------- Navbar - End --------- */
 
-
-/* --------- Center Application - Start --------- */
-
+/* ------------------------------------------------------ */
+/*                     Contenu central                    */
+/* ------------------------------------------------------ */
 .sg-layout__container:not(.sg-layout__container--full-page) {
     background:var(--dark-back-color);
     color:var(--dark-global-text-color);
 }
 
-/* texte de la box */
+/* Texte de la box */
 .sg-text:not(
-div.sg-animation-fade-in-fast > div > div:nth-child(2) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-div.sg-animation-fade-in-fast > div > div:nth-child(4) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-div.sg-animation-fade-in-fast > div > div:nth-child(6) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box__content.sg-content-box__content--spaced-top-large.sg-content-box__content--spaced-bottom-xlarge > div.sg-actions-list.sg-actions-list--to-right.sg-actions-list--to-top > div > div > div,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div.sg-text.sg-text--xsmall.sg-text--bold,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div.sg-text.sg-text--xsmall.sg-text--bold,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div.sg-text.sg-text--xsmall.sg-text--bold,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div.sg-text.sg-text--xsmall.sg-text--bold,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(3),
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div.sg-text.sg-text--xsmall.sg-text--bold,
-div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div:nth-child(3)
+div:nth-child(2) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div:nth-child(4) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div:nth-child(6) > div.sg-actions-list.sg-actions-list--space-between.sg-actions-list--to-top.sg-actions-list--no-wrap > div:nth-child(2) > div > div > div,
+div:nth-child(8) > div > div.sg-content-box__content.sg-content-box__content--spaced-top-large.sg-content-box__content--spaced-bottom-xlarge > div.sg-actions-list.sg-actions-list--to-right.sg-actions-list--to-top > div > div > div,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div.sg-text.sg-text--xsmall.sg-text--bold.brn-answers-tracking__number.brn-answers-tracking__number--animated,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(5) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(3),
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div.sg-text.sg-text--xsmall.sg-text--bold,
+div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div:nth-child(2) > div > div:nth-child(7) > div:nth-child(3)
 ) {
     color:var(--dark-global-text-color);
 }
 
-/* box nombre de points */
+/* Nombre de points */
 .sg-counter--with-icon {
     background:var(--dark-points-box-color);
 }
@@ -136,17 +138,16 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
     color: white;
 }
 
-/* texte des boutons */
+/* Textes des boutons */
 .sg-button__text {
     color:var(--dark-global-text-color);
 }
-
-/* bordure des boutons */
+/* Bordure des boutons */
 .sg-button--outline {
     border: 2px solid var(--dark-global-text-color);
 }
 
-/* box "Toutes les matières" */
+/* Bouton "Toutes les matières" */
 .brn-subject-list__subject--active {
     background-color:var(--dark-global-box-color);
 }
@@ -224,11 +225,8 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
     background:var(--dark-global-box-hover-color);
 }
 
-
-/* text headline */
-.sg-headline:not(
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div.sg-content-box__content.sg-content-box__content--spaced-bottom > h3
-) {
+/* Text headline */
+.sg-headline:not(body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div:nth-child(3) > div > div > div.sg-animation-fade-in-fast > div > div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div.sg-content-box__content.sg-content-box__content--spaced-bottom > h3) {
     color:var(--dark-global-text-color);
 }
 
@@ -241,8 +239,8 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
 }
 
 /* Texte de la jauge de réponses */
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-flex--margin-bottom-s > div > div:nth-child(1) > div > div > div.brn-answering-streak__counter-wrapper > div.sg-flex.sg-flex--justify-content-center.sg-flex--align-items-center.brn-answering-streak__counter > div > span,
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-flex--margin-bottom-s > div > div.sg-flex.sg-flex--margin-bottom-l.brn-answering-streak__carousel-wrapper > div > div > div > div > div > div:nth-child(2) > div > div > div.sg-flex.sg-flex--column.sg-flex--align-items-center.sg-flex--margin-top-xs.sg-flex--margin-bottom-s.brn-answering-streak__icon-container > div.sg-flex.sg-flex--margin-top-s > div
+div:nth-child(1) > div > div > div.brn-answering-streak__counter-wrapper > div.sg-flex.sg-flex--justify-content-center.sg-flex--align-items-center.brn-answering-streak__counter > div > span,
+div.sg-flex.sg-flex--margin-bottom-l.brn-answering-streak__carousel-wrapper > div > div > div > div > div > div:nth-child(2) > div > div > div.sg-flex.sg-flex--column.sg-flex--align-items-center.sg-flex--margin-top-xs.sg-flex--margin-bottom-s.brn-answering-streak__icon-container > div.sg-flex.sg-flex--margin-top-s > div
 {
     color:var(--dark-global-text-hover-color);
 }
@@ -266,30 +264,63 @@ div[data-testid="tooltip_content"] * {
     background-color:var(--dark-light-color);
 }
 
-/* --------- Center Application - End --------- */
+
+/* ------------------------------------------------------ */
+/*                Onglet Notifications & MP               */
+/* ------------------------------------------------------ */
+
+/* Fond du pop-up */
+.NestedUserPanelBubble__content--1kSA_ {
+    background-color: var(--dark-light-color);
+}
+
+/* Coulour de fond des notifs */
+.NotificationsListItem__read--2I0ce, .MessagesListItem__read--3Shls {
+    background-color: #232323;
+}
+.MessagesListItem__read--3Shls:hover {
+    background-color: var(--dark-back-color);
+}
+
+/* Divider entre les 3 boutons & contenus */
+body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-child(2) > header > div.Header-module__limitWidth--37U5t > div > div.sg-flex.sg-flex--align-items-center.Header-module__childrenWrapper--3RYyB > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div > div > div > div > div.NestedUserPanelTabs__header--39UHl > div.NestedUserPanelTabs__separator--36QC0 {
+    border-color: var(--dark-global-box-color);
+}
+/* Avatar des utilisateurs en notifs */
+.sg-avatar--with-border {
+    border-color: var(--dark-back-color);
+}
+/* Bouton de l'onglet */
+.sg-button--solid-light {
+    background-color: var(--blue-nds);
+}
+.sg-button--solid-light:hover {
+    background-color: var(--blue-hover-nds) !important;
+}
 
 
-
-/* --------- Liste des devoirs - Start --------- */
+/* ------------------------------------------------------ */
+/*                    Liste des devoirs                   */
+/* ------------------------------------------------------ */
 
 /* Bulle "Regardent" et "Résolu par" */
 .brn-observing-user, .brn-answerer {
     border: var(--dark-back-color) 2px solid !important;
 }
 
-/* --------- Liste des devoirs - End --------- */
 
-
-/* --------- Footer - Start --------- */
+/* ------------------------------------------------------ */
+/*                         Footer                         */
+/* ------------------------------------------------------ */
 
 .FooterLayout-module__footer--jB_Pv {
     background-color:var(--dark-footer-back-color);
 }
 
-/* --------- Footer - End --------- */
 
-
-/* --------- Admin side panel - Start --------- */
+/* ------------------------------------------------------ */
+/*                     Side menu modo                     */
+/* ------------------------------------------------------ */
 
 .brn-moderation-panel__content {
     background-color:var(--dark-admin-panel-back-color);
@@ -312,10 +343,10 @@ div[data-testid="tooltip_content"] * {
     display: block !important;
 }
 
-/* --------- Admin side panel - End --------- */
 
-
-/* --------- Modération - Start --------- */
+/* ------------------------------------------------------ */
+/*                   Page de modération                   */
+/* ------------------------------------------------------ */
 
 /* Navbar */
 #main-panel {
@@ -535,5 +566,3 @@ div[data-testid="tooltip_content"] * {
 #moderate-functions-panel .content-scroll {
     border-color: var(--dark-global-box-hover-color);
 }
-
-/* --------- Modération - End --------- */
