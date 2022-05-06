@@ -35,6 +35,11 @@
     background: none !important;
 }
 
+/* Notif flash état de modération */
+div.flash-messages-container.js-flash-messages.js-flash-messages-container > div > div > div {
+    color: var(--dark-back-color) !important;
+}
+
 
 /* ------------------------------------------------------ */
 /*                        Bordures                        */
@@ -140,6 +145,10 @@ div:nth-child(8) > div > div.sg-content-box.brn-answers-per-day__container > div
 body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-space-x-xs > div:nth-child(1) > div > div > div > div > div > div > div.sg-flex.sg-flex--margin-right-xxs > div > svg {
     background:var(--dark-back-color);
     color: white;
+}
+/* L'icon des points Brainly */
+div[data-testid="game_box_stat_item_container"] svg[aria-labelledby="title-points-bqj58g"] use {
+    fill: white;
 }
 
 /* Textes des boutons */
@@ -603,6 +612,7 @@ div[style="background-color: rgb(238, 170, 170);"] {
     content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/search-dark.svg') !important;
 }
 
+<<<<<<< Updated upstream
 /* ------------------------------------------------------ */
 /*                Right side theme button                 */
 /* ------------------------------------------------------ */
@@ -616,3 +626,112 @@ div[style="background-color: rgb(238, 170, 170);"] {
     background-color: black;
     color: var(--dark-global-text-color);
 }
+=======
+
+/* ------------------------------------------------------ */
+/*                     Page de devoir                     */
+/* ------------------------------------------------------ */
+
+/* Section commentaire */
+.Comments-module__comments--3qGAy {border-top: none;}
+.sg-textarea {color: white;background: var(--dark-light-color);
+    border: var(--dark-light-color);}
+.sg-textarea:hover {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+.sg-textarea:focus, .sg-textarea:active, .sg-textarea:focus:hover, .sg-textarea:active:hover {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+    outline: none;
+}
+
+/* Bordures & fonds des zones */
+.QuestionBoxLayout-module__box--3D9pn {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+.sg-box--gray-10 {
+    background-color: var(--dark-back-color);
+}
+.brn-qpage-next-question-activity {
+    border: 2px solid var(--dark-light-color);
+}
+.brn-qpage-layout {
+    background-color: var(--dark-back-color);
+}
+.sg-box--white {
+    background-color: var(--dark-back-color);
+}
+
+/* Icônes svg */
+.brn-qpage-next-question-activity svg {
+    fill: white;
+}
+article[aria-label="Question"] svg {
+    fill: white;
+}
+
+/* Les infos du devoirs (classe, matière, date) */
+/* Les infos de celui qui a répondu */
+ul[data-testid="question_box_header_breadcrumbs"] li *, 
+li.HorizontalList-module__item--2xXqD div *, 
+li.HorizontalList-module__item--2xXqD div {
+    color: #687b8c !important;
+    font-weight:600;
+}
+
+/* Badge "Résolu" */
+.sg-label--gray-20 {
+    background-color: var(--dark-light-color);
+}
+
+/* Bouton "Voir les réponses" */
+.SeeAnswersButton-module__buttonCounter--1LAZ_ > div > div {
+    color: var(--blue-nds) !important;
+}
+
+/* Cadre de réponse */
+.AnswerBoxLayout-module__box--2yed7 {
+    background-color: transparent;
+    border: 2px solid var(--dark-light-color);
+}
+.AnswerBoxHeader-module__header--2JjZN {
+    border-color: var(--dark-light-color);
+}
+
+/* Résolu vérifié par expert */
+div[data-testid="question_box_header_side_expert_verified"] div {
+    background-color: var(--green-nds);
+}
+
+/* Réponse vérifié par expert */
+div[data-testid="answer_box_header"] {
+    background-color: var(--green-nds);
+    border-radius:5px;
+}
+div[data-testid="answer_box_header"] use {
+    fill: white;
+}
+.AnswerBoxLayout-module__boxExpertVerified--Ljdgc {
+    border: 2px solid var(--green-nds) !important;
+}
+
+/* Afficher les equations LaTeX avec un fond blanc */
+div[data-testid="answer_box_text"] img {
+    padding: .7em;
+    border-radius: 8px;
+    background-color: #c6c6c6;
+}
+
+/* Pastilles avatar UNTEL ont trouvé ça utile */
+.CommunityAvatar-module__avatar--1HfE_ {
+    border-color: var(--dark-back-color);
+}
+
+/* Vous cherchez plus de réponses ? */
+div[data-testid="looking_for_more_banner"] {
+    display: none;
+}
+  
+>>>>>>> Stashed changes
