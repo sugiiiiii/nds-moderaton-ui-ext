@@ -8,36 +8,52 @@ function main() {
         document.getElementById("darkmode").disabled = false;
     }
 
-    let nav;
-    if (location.href === "https://nosdevoirs.fr/" || location.href === "https://nosdevoirs.fr/messages") {
-        nav = document.querySelector("body > div.js-page-wrapper > div > nav > div.brn-moderation-panel__content.sg-box.sg-box--padding-m.sg-box--shadow.js-moderation-panel-content > div > div.sg-content-box__content > div")
-    } else if (location.href.includes("https://nosdevoirs.fr/tasks/") || location.href.includes("https://nosdevoirs.fr/moderators/")) {
-        nav = document.querySelector("#main-panel > div.mint-header__container > div.mint-header__left");
-    } else {
-        return;
-    }
+    const theme_button = document.createElement("button");
+    theme_button.id = "theme-button-panel";
+    theme_button.onclick = show_panel;
+
+    const theme_button_text = document.createElement("span");
+    theme_button_text.id = "theme-button-span";
+    theme_button_text.textContent = "Thème";
+    theme_button.appendChild(theme_button_text);
+
+    const content_div = document.createElement("div");
+    content_div.id = "content-div";
+
+    const theme_panel = document.createElement("div");
+    theme_panel.id = "theme-panel";
+    theme_panel.style.display = "none";
+
+    const theme_button_div = document.createElement("div");
+    theme_button_div.id = "theme-button-div";
 
     const span_button_theme = document.createElement("span");
     span_button_theme.id = "span-button-theme";
     span_button_theme.textContent = "Thème sombre:  ";
     span_button_theme.style.fontSize = ".875rem";
-    nav.appendChild(span_button_theme);
+    content_div.appendChild(span_button_theme);
 
     const button_theme = document.createElement("input");
     button_theme.type = "checkbox";
     button_theme.hidden = true;
     button_theme.id = "theme-button";
-    button_theme.onclick = change_theme
-    span_button_theme.appendChild(button_theme);
+    button_theme.onclick = change_theme;
+    content_div.appendChild(button_theme);
 
     const label_button_theme = document.createElement("label");
     label_button_theme.className = "switch";
     label_button_theme.htmlFor = "theme-button";
-    span_button_theme.appendChild(label_button_theme);
+    content_div.appendChild(label_button_theme);
 
     if (localStorage.getItem('theme') === "dark") {
         button_theme.checked = true;
     }
+
+    theme_panel.appendChild(content_div);
+
+    theme_button_div.appendChild(theme_button);
+    theme_button_div.appendChild(theme_panel);
+    document.body.appendChild(theme_button_div);
 }
 
 function addCss(fileName) {
@@ -62,6 +78,15 @@ function change_theme() {
         localStorage.setItem("theme", "light");
     }
 
+}
+
+function show_panel() {
+    const theme_panel = document.getElementById("theme-panel");
+    if (theme_panel.style.display === "none") {
+        theme_panel.style.display = "block";
+    } else {
+        theme_panel.style.display = "none";
+    }
 }
 
 main();

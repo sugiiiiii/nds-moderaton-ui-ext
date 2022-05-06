@@ -602,3 +602,17 @@ div[style="background-color: rgb(238, 170, 170);"] {
 .mint-icon-search::before, .mint-sticker--search::before, .mint-label__icon--search::before {
     content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/search-dark.svg') !important;
 }
+
+/* ------------------------------------------------------ */
+/*                Right side theme button                 */
+/* ------------------------------------------------------ */
+
+/* Theme button */
+#theme-button-panel {
+    background-color: black;
+    color: var(--dark-global-text-color);
+}
+#content-div {
+    background-color: black;
+    color: var(--dark-global-text-color);
+}
