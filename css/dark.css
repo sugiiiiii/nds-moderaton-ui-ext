@@ -92,8 +92,9 @@ input[type=search].sg-search__input {
     background-color: var(--dark-back-color);
     border: var(--dark-light-color) 2px solid;
 }
+/* Dans la vieille interface */
 #html .mint .mint-header .mint-input {
-    border-color: white;
+    border-color: white !important;
 }
 
 
