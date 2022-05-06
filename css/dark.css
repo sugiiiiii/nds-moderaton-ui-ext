@@ -213,8 +213,8 @@ div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div 
     border-radius: 24px 0 0 24px;
     background-color: transparent !important;
 }
-svg[aria-labelledby="title-points-ume713"] use {
-    fill:white !important;
+#main-content > div.brn-qpage-layout__right.js-aside-content > div > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-space-x-xs > div:nth-child(1) > div > div > div > div > div > div > div.sg-flex.sg-flex--margin-right-xxs > div > svg {
+    color: var(--dark-global-text-color);
 }
 
 /* Section "Ton influence" */
@@ -739,4 +739,83 @@ div[data-testid="answer_box_text"] img {
 div[data-testid="looking_for_more_banner"] {
     display: none;
 }
-  
+
+/* ------------------------------------------------------ */
+/*            Pop-up modération sur page devoir           */
+/* ------------------------------------------------------ */
+
+/* Background */
+#moderate-task-toplayer {
+    background-color: var(--dark-back-color);
+}
+
+/* Box question et réponses */
+#moderate-task-toplayer .toplayer-body .contents .boxxy {
+    background-color: var(--dark-light-color);
+}
+
+/* Nom d'utilisateur */
+#moderate-task-toplayer .toplayer-body .contents .boxxy .body .nick>a {
+    color: #0488cc;
+}
+
+/* Rang */
+#moderate-task-toplayer .toplayer-body .moderation-response .rank {
+    color: #d0b73b;
+}
+
+/* Titre de la Pop-up */
+#moderate-task-toplayer .toplayer-header .heading {
+    color: var(--dark-global-text-color);
+}
+
+/* Stats */
+#moderate-task-toplayer .toplayer-body .contents .boxxy .body .nick {
+    color: #6e6e6e
+}
+
+/* Message de succès (temps prolongé) */
+.sg-flash__message--success {
+    background-color: #2dcd7d;
+}
+
+/* Select pour temps à prolonger */
+select[name="extend-ticket-time"] {
+    background-color: var(--dark-light-color);
+}
+
+/* Bouton prolonger le temps */
+#moderate-task-toplayer > div > header > div.mod-info > div > span {
+    background-color: var(--dark-light-color);
+}
+
+/* Bouton confirmer */
+#moderate-task-toplayer .btn-warning {
+    background: #0e5c0a;
+}
+
+/* Boutons de sous catégorie */
+span.subcategories[style="display: inline;"] > input {
+    background-color: var(--dark-back-color) !important;
+    box-shadow: 0 0 3px 1px var(--dark-back-color) !important;
+    color: var(--dark-global-text-color);
+}
+span.subcategories[style="display: inline;"] > input:hover {
+    background-color: var(--dark-global-box-hover-color) !important;
+    color: var(--dark-global-text-color) !important;
+}
+
+/* Input 'Donnez plus d'infos...' */
+#moderate-task-toplayer .toplayer-body .contents .boxxy .text-reason {
+    background: var(--dark-back-color);
+    color: var(--dark-global-text-color);
+}
+
+/* Bouton annuler */
+.moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child > button.resign {
+    background-color: var(--dark-back-color) !important;
+}
+.moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child > button.resign:hover {
+    color: var(--dark-global-text-color) !important;
+    background-color: var(--dark-global-box-hover-color) !important;
+}
