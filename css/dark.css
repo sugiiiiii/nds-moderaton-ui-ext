@@ -92,6 +92,9 @@ input[type=search].sg-search__input {
     background-color: var(--dark-back-color);
     border: var(--dark-light-color) 2px solid;
 }
+#html .mint .mint-header .mint-input {
+    border-color: white;
+}
 
 
 /* ------------------------------------------------------ */
@@ -389,6 +392,17 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
     background-color: var(--dark-card-top-color) !important;
 }
 
+/* Card survol */
+#moderation-all .content .moderation-item:hover .content {
+    background-color: var(--dark-card-top-color) !important;
+}
+
+/* Card modération déjà réservée */
+div[style="background-color: rgb(238, 170, 170);"] {
+    background-color: #bd362f !important;
+}
+
+
 /* text du contenu des cartes */
 .content > .body > p {
     color: var(--dark-global-text-color);
@@ -495,7 +509,7 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
 #moderation-all .content .loader {
     background-color: transparent !important;
     color: var(--dark-global-text-color) !important;
-    border: 2px solid var(--dark-global-text-color) !important;
+    border: none !important;
 }
 
 /* navbar profile */
@@ -555,7 +569,7 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
     background-color: rgb(50 50 50 / 50%);
 }
 
-/* moderation border navbar */
+/* Moderation border navbar */
 #html .mint .mint-header {
     border-bottom: 2px solid var(--dark-global-box-hover-color);
 }
@@ -568,4 +582,22 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
 /* moderation panel gauche border */
 #moderate-functions-panel .content-scroll {
     border-color: var(--dark-global-box-hover-color);
+}
+
+/* Icons de la navbar -- anciennes interface */
+/* Interface du haut */
+#html .mint #main-panel .menu-right #panel-messages>a::before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/envelope-alt-dark.svg') !important;
+}
+
+#html .mint #main-panel .menu-right #panel-notifications>a::before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/bell-dark.svg') !important;
+}
+
+#html .mint #main-panel .menu-right #community_new>a::before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/user-dark.svg') !important;
+}
+
+.mint-icon-search::before, .mint-sticker--search::before, .mint-label__icon--search::before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/search-dark.svg') !important;
 }
