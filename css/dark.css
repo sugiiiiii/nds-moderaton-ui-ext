@@ -213,6 +213,9 @@ div.sg-layout__aside-content > div.sg-flex.sg-flex--margin-bottom-m > div > div 
     border-radius: 24px 0 0 24px;
     background-color: transparent !important;
 }
+svg[aria-labelledby="title-points-ume713"] use {
+    fill:white !important;
+}
 
 /* Section "Ton influence" */
 body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__aside-content > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height > div:nth-child(1) {
