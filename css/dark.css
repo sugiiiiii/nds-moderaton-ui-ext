@@ -14,6 +14,27 @@
     --dark-card-top-color: #121212;
 }
 
+/* Loading animation du site entier */
+.brn-placeholder__animation {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderWave;
+    animation-name: placeholderWave;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg,#28282800 20%,var(--dark-back-color) 50%,#28282800 80%);
+    background-size: 650px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.PlaceholderAnimationBox-module__animation--37g9H {
+    background: none !important;
+}
+
 /* --------- Bordures - Start --------- */
 
 body {
@@ -33,11 +54,6 @@ body {
 /* Bordures des zones des devoirs */
 .brn-feed-item-wrapper {
     border-color: var(--dark-light-color) !important;
-}
-
-/* Séparateurs avant les devoirs */
-body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-flex.sg-flex--column.sg-flex--margin-bottom-m, body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-horizontal-separator.sg-horizontal-separator--gray-40 {
-    display: none;
 }
 
 /* Quelques séparateurs */
@@ -235,6 +251,15 @@ body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.s
 .sg-toplayer {
     background-color:var(--dark-footer-back-color);
 }
+/* Dégradé/ombre en bas de la pop-up */
+.brn-box--with-opacity:after {
+    background: linear-gradient(180deg,hsla(0, 0%,100%,0) 0, var(--dark-back-color));
+}
+/* Couleur de la fenêtre en chargement après modification */
+.brn-favorite-subject-customization-modal-loading {
+    background-color: var(--dark-back-color);
+    z-index: 2;
+}
 
 /* tooltip-content */
 div[data-testid="tooltip_content"] * {
@@ -275,13 +300,24 @@ div[data-testid="tooltip_content"] * {
     color:var(--dark-global-text-color) !important;
 }
 
+/* Forcer une animation d'ouverture/fermeture du panel de modération à droite */
+.brn-moderation-panel__content {
+    border-radius: 8px 0 0 8px;
+    transform: translateX(0px);
+    transition: 200ms;
+}
+.brn-moderation-panel__content.js-hidden {
+    transition: 200ms;
+    transform: translateX(100%);
+    display: block !important;
+}
+
 /* --------- Admin side panel - End --------- */
 
 
 /* --------- Modération - Start --------- */
 
 /* Navbar */
-
 #main-panel {
     background: var(--dark-back-color) !important;
     color: var(--dark-light-color) !important;

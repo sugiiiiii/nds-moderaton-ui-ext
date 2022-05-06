@@ -306,30 +306,29 @@ div.options {
     margin: 0 !important;
 }
 
+/* Filtres selon la matière */
 select.subjects {
     border-radius: 8px;
     border: none;
     padding-left: 1em !important;
     width: 10em !important;
 }
-
 select.subjects:focus {
     border: none !important;
     outline: none !important;
 }
 
+/* Bouton pour réinitialiser les filtres des signalements */
 select.filters {
     width: 28em;
     border-radius: 8px;
     border: none;
     margin-left: 1.5em !important;
 }
-
 select.filters:focus {
     border: none !important;
     outline: none !important;
 }
-
 button.reset.btn {
     margin-left: 1.4em;
     border: none;
@@ -341,7 +340,6 @@ button.reset.btn {
     text-align: center;
     padding: 0 !important;
 }
-
 button.reset.btn i.icon.icon-remove {
     background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/redo.svg') !important;
     zoom: 1 !important;
@@ -366,7 +364,7 @@ button.reset.btn:hover i.icon.icon-remove {
     transition: 300ms;
 }
 
-/* Footer card modération */
+/* Footer des card modération */
 #moderation-all .content .moderation-item .content .footer {
     border: none !important
 }
@@ -375,11 +373,11 @@ button.reset.btn:hover i.icon.icon-remove {
     padding-top: .5em;
     padding-bottom: .5em;
 }
-
 .footer > .row > .nick > span {
     display: none;
 }
 
+/* Icon de la personne qui a été signalée */
 .footer > .row:first-child::before {
     content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/reported.svg');
     height: 15px;
@@ -390,6 +388,7 @@ button.reset.btn:hover i.icon.icon-remove {
     margin-right: -0.15em;
 }
 
+/* Icon de la personne qui a signalé */
 .footer > .row:last-child::before {
     content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/reporter.svg');
     height: 15px;
@@ -400,23 +399,20 @@ button.reset.btn:hover i.icon.icon-remove {
     margin-right: -0.15em;
 }
 
-
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
     height: 0;
 }
-
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #0e0e266e;
 }
 
 /* LOAD MORE */
-
 .loader.calm {
     border: none !important;
     border-radius: 50px;
@@ -425,7 +421,7 @@ button.reset.btn:hover i.icon.icon-remove {
     margin: auto !important;
 }
 
-/* POP UP MODERATION */
+/* POP UP DE MODERATION */
 
 .contener-center.mod {
     width: 850px !important;
@@ -435,33 +431,27 @@ button.reset.btn:hover i.icon.icon-remove {
 .boxxy .text {
     display: none;
 }
-
 #toplayer .contener-center.mod .moderation-toplayer .moderation-response {
     border-top-style: dashed;
 }
-
 .boxxy {
     border-radius: 15px !important;
     border: none !important;
 }
-
 .report.boxxy {
     padding: 1.2em !important;
     margin-bottom: 1.3em;
     border-radius: 15px !important;
 }
-
 .contener-center.mod {
     width: 850px !important;
 }
-
 .boxxy.text {
     border-radius: 15px !important;
 }
 
 
-/* Champs de suppression */
-
+/* Les raisons de suppressions */
 div.line > div {
     display: flex !important;
     flex-wrap: wrap;
@@ -470,10 +460,8 @@ div.line > div {
     justify-content: space-around;
     align-items: center;
 }
-
 .action-box > div > :nth-child(2) {
     width: 25% !important;
-    /* background-color: #ffeaea !important; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -485,13 +473,11 @@ div.line > div {
     margin-top: .8em;
     margin-bottom: .8em;
 }
-
 .subs {
     width: 70% !important;
     display: flex !important;
     padding-top: 1em;
 }
-
 span.subcategories[style="display: inline;"] {
     color: black !important;
     display: flex !important;
@@ -502,11 +488,9 @@ span.subcategories[style="display: inline;"] {
     gap: 0.5em;
 
 }
-
 .action-box > div > span.line {
     display: none;
 }
-
 span.subcategories[style="display: inline;"] > input {
     background-color: white !important;
     border-radius: 15px !important;
@@ -521,14 +505,16 @@ span.subcategories[style="display: inline;"] > input {
     font-weight: 600;
     text-shadow: none !important;
 }
-
 span.subcategories[style="display: inline;"] > input:hover {
     box-shadow: 0 0 3px 1px #ebebeb !important;
     z-index: 10;
     transition: 200ms;
 }
 
-/* Modération page de devoir */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* Modération depuis la page du devoir */
 
 #moderate-task-toplayer {
     max-width: 850px !important;
@@ -564,26 +550,19 @@ header.toplayer-header {
     position: initial !important;
     transform: translate(25em, 2.3em) !important;
 }
-
 #moderate-task-toplayer .toplayer-header .mod-info {
     margin-bottom: 0 !important;
 }
-
 #moderate-task-toplayer .toplayer-header {
     border: none !important;
 }
-
 #moderate-task-toplayer .toplayer-body .moderation-response, #moderate-task-toplayer .toplayer-body .moderation-task {
     border: none !important;
 }
-
 .boxxy.text {
     margin-top: 1.5em !important;
     margin-bottom: 1.5em !important;
 }
-
-/* Modération depuis la page du devoir */
-
 /* Cases à cocher et boutons "Confirmer" et "Annuler" */
 .moderation-task .action-box.action-delete.boxxy.opened > div > p:last-child {
     display: grid; 
@@ -596,19 +575,17 @@ header.toplayer-header {
         "btn_cancel_nds btn_cancel_nds btn_cancel_nds"; 
     text-align: center !important;
 }
-
 .moderation-task .action-box.action-delete.boxxy.opened > div > p:last-child > button.proceed {
     grid-area: btn_confirm_nds;
 }
-
 .moderation-task .action-box.action-delete.boxxy.opened > div > p:last-child > button.resign {
     grid-area: btn_cancel_nds;
 }
-
 .sg-overlay--visible {
     border-radius: 8px !important;
 }
 
+/* Modération de réponse, réorganisation complète*/
 .moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -620,22 +597,19 @@ header.toplayer-header {
         "btn_cancel_nds btn_cancel_nds"; 
     text-align: center !important;
 }
-
 .moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child > button.proceed {
     grid-area: btn_confirm_nds;
 }
-
 .moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child > button.resign {
     grid-area: btn_cancel_nds;
 }
-
 .action-box.action-delete.boxxy.opened .text-reason {
     border-radius: 8px !important;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
-/* Demande de correction */
+/* Demande de correction, réorganisation complète */
 .action-to-correct.boxxy.opened > div {
     width: 100% !important;
     display: grid;
@@ -647,20 +621,16 @@ header.toplayer-header {
         "btn_zone btn_zone"
         "btn_zone btn_zone";
 }
-
 .action-to-correct.boxxy.opened > div p:nth-child(2) {
     grid-area: textarea-reason;
     width: 100% !important;
     margin: auto !important;
-    /* background-color: yellow !important; */
 }
-
 .action-to-correct.boxxy.opened > div p:nth-child(3) > button:first-child {
     margin: auto !important;
     width: 100%;
     text-align: center !important;
 }
-
 .action-to-correct.boxxy.opened > div p:nth-child(3) {
     grid-area: btn_zone;
     display: flex;
@@ -682,15 +652,13 @@ textarea.text-reason {
     margin-bottom: 8px !important;
 }
 
-
 /* Pop up Notifications & Friends */
-
 .NestedUserPanelBubble__panel--x3Jaa {
     width: 28vw !important;
     height: 85vh !important;
 }
 
-/* Plus de question à propos de X */
+/* Plus de question à propos de <matière> */
 [data-testid="newest_questions"] {
     display: none;
 }
@@ -703,9 +671,15 @@ textarea.text-reason {
     display: none;
 }
 
+/* Séparateurs avant les devoirs */
+body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-flex.sg-flex--column.sg-flex--margin-bottom-m, body > div.js-page-wrapper > div > div.js-react-feed-logged-in > div.sg-layout.sg-layout--wide.sg-layout--three-columns > div > div.sg-layout__content > div.sg-flex.sg-flex--margin-bottom-m > div > div.sg-horizontal-separator.sg-horizontal-separator--gray-40 {
+    display: none;
+}
+
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
+/* V10 */
 
 /* Profil via la vieille interface */
 .personal_info > a {
@@ -804,9 +778,8 @@ input.onlylink {
 }
 
 
-/**
- * Button switch
- */
+
+/* Button switch */
 .switch {
     display: inline-block;
     position: relative;
@@ -833,7 +806,7 @@ input.onlylink {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1) !important;
 }
 input:checked + .switch {
-    background: #72da67 !important;
+    background: var(--blue-nds) !important;
 }
 input:checked + .switch::before {
     left: 27px;
