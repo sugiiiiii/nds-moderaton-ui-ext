@@ -779,8 +779,9 @@ input.onlylink {
 }
 
 
-
-/* Button switch */
+/* ------------------------------------------------------ */
+/*                 Bouton Switch Darkmode                */
+/* ------------------------------------------------------ */
 .switch {
     display: inline-block;
     position: relative;
@@ -805,6 +806,9 @@ input.onlylink {
 }
 .switch:active::before {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1) !important;
+
+        /* Animations de glissement du switch */
+        left: 27px;
 }
 input:checked + .switch {
     background: var(--blue-nds) !important;
@@ -815,7 +819,19 @@ input:checked + .switch::before {
 }
 input:checked + .switch:active::before {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2) !important;
+
+    /* Animations de glissement du switch */
+    left: 0px;
 }
+
+/* Icon du soleil et de la lune */
+input:checked + .switch:before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/sun.svg');
+}
+.switch:before {
+    content: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/moon.svg');
+}
+
 
 /* ------------------------------------------------------ */
 /*                   Bouton switch thème                  */
