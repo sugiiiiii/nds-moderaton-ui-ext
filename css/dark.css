@@ -819,3 +819,63 @@ span.subcategories[style="display: inline;"] > input:hover {
     color: var(--dark-global-text-color) !important;
     background-color: var(--dark-global-box-hover-color) !important;
 }
+
+
+/* ------------------------------------------------------ */
+/*                     Page des succès                    */
+/* ------------------------------------------------------ */
+/* = Les badges, les défis, les exploits */
+
+/* Modal au clic sur un badge */
+.AchievementDetailsModalWrapper-module__modal--1JdHJ {
+    background-color: var(--dark-back-color);
+    border-radius: 5px;
+}
+button[aria-label="Close this dialog window"] use {
+    fill: white !important;
+}
+
+/* Couleurs de fond des badges */
+.CustomAchievementBadge-module__gray--3MXv8 {
+    background-color: var(--dark-light-color);
+}
+/* Couleur des badges obtenus (jaunes) */
+div.CustomAchievementBadge-module__yellow--31pB7 {
+    background-color: rgb(255 196 0 / 20%);
+}
+
+/* Ombre de l'icône dans le badge */
+.CustomAchievementBadge-module__gray--3MXv8 .CustomAchievementBadge-module__shadow--1Mv32:after {
+    opacity: 10%;
+}
+div.CustomAchievementBadge-module__yellow--31pB7 .CustomAchievementBadge-module__shadow--1Mv32:after {
+    opacity: 25%;
+}
+/* Couleur de l'icône du badge */
+ul[data-testid="achievements_list_template"] use, div[data-testid="custom_achievement_badge"] use {
+    fill: white;
+}
+
+/* Progress bar */
+.AchievementProgress-module__progressBar--2kjcH {
+    background-color: var(--dark-light-color);
+}
+
+/* Indicateur de progression jaune */
+div.AchievementLevelLabel-module__label--V4Nti .sg-text, div.AchievementLevelLabel-module__label--V4Nti use {
+    color: var(--yellow-nds) !important;
+    fill: var(--yellow-nds) !important;
+}
+
+/* Bannière du dessus expliquant le concept */
+div[data-testid="achievements_banner"] {
+    background: var(--dark-light-color);
+}
+
+/* Liste des badges */
+ul[data-testid="achievements_list_template"] {
+    border: 2px solid var(--dark-light-color);
+}
+.AchievementsListTemplate-module__listItem--1YSJc+* {
+    border-color: var(--dark-light-color);
+}
