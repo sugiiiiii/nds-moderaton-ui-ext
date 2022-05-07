@@ -909,3 +909,57 @@ div[data-testid="user_profile_load_more_button"]:hover {
 .sg-button__icon {
     color: var(--dark-global-text-color);
 }
+/* ------------------------------------------------------ */
+/*               Profile page (old version)               */
+/* ------------------------------------------------------ */
+
+/* Bande extérieure */
+div#content-old {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-global-box-hover-color) !important;
+}
+
+/* background central */
+#profile {
+    background-color: var(--dark-back-color);
+}
+
+/* profile carre */
+#html .mint #profile #main-left .personal_info {
+    border: 2px solid var(--dark-global-box-hover-color);
+}
+
+/* Texte important (username, nombre de points...) */
+.mint-header-secondary, .mint-cake-heading, #html .mint #profile #main-left .personal_info .header .info .info_top .ranking h2 a, #html .mint #profile #main-left .personal_info .header .info .info_top .rank h3 span, #html .mint #profile #main-left .personal_info .header .info .info_top .points h1, #html .mint #profile h3
+{
+    color: var(--dark-global-text-color);
+}
+
+
+/* 'Prénom, Age, Niveau' */
+#html .mint #profile #main-left .personal_info .extra-info li span,
+#html .mint #profile #main-left .personal_info .extra-info li
+{
+    color: var(--dark-global-text-color);
+}
+
+/* Rang */
+#main-left > div.personal_info > div.header > div.info > div.info_top > span.rank > h3 > a {
+    color: #d0b73b !important;
+}
+
+/* Séparateur entre les réponses */
+#html .mint #profile #main-left .tasks-list .task {
+    border-bottom: 2px solid var(--dark-global-box-hover-color);
+}
+
+/* Texte des questions */
+div#content-old ol.tasks-list .task .task-content a {
+    color: var(--dark-global-text-color);
+}
+
+/* Boutons navbar */
+#html .mint #tabs-doj #main_menu>li {
+    background-color: var(--dark-light-color);
+    color: var(--dark-global-text-color);
+}
