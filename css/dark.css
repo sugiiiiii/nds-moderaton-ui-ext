@@ -740,6 +740,12 @@ div[data-testid="looking_for_more_banner"] {
     display: none;
 }
 
+/* Box 'réponse en train d'être rédigé */
+.brn-qpage-next-answer-box {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+
 /* ------------------------------------------------------ */
 /*            Pop-up modération sur page devoir           */
 /* ------------------------------------------------------ */
@@ -878,68 +884,4 @@ ul[data-testid="achievements_list_template"] {
 }
 .AchievementsListTemplate-module__listItem--1YSJc+* {
     border-color: var(--dark-light-color);
-}
-
-/* ------------------------------------------------------ */
-/*                  Page profil (new UX)                  */
-/* ------------------------------------------------------ */
-
-/* Bannière du profil */
-.Wallpaper__wallpaper--ffCjw {
-    background: var(--dark-light-color) !important;
-}
-
-/* Texte dans les boutons */
-a[aria-current="page"] h2 {
-    color: var(--blue-nds) !important;
-}
-
-/* Divider entre les stats personnelles */
-div.brn-qpage-next-answer-box-user-info__stats-list-item::after {
-    border: 1px solid var(--dark-light-color) !important;
-}
-
-/* Badge de rang */
-div.sg-label--yellow-20 h2 {
-    color: var(--yellow-nds) !important;
-}
-
-/* Boutons bleu clair */
-.sg-button--solid-light {
-    background-color: var(--blue-nds);
-}
-
-/* Icons dans les boutons */
-.sg-button__icon use {
-    fill: white;
-}
-
-/* (B) Nombre de points */
-svg[aria-labelledby="title-points-k8ih9g"] use {
-    fill: white;
-}
-.sg-counter__icon-container::before {
-    background-color: inherit;
-}
-
-/* Liste d'amis */
-div[data-testid="profile_page_friends"] {
-    background: none;
-    border: 2px solid var(--dark-light-color);
-}
-
-/* Label "Meilleure réponse" */
-div.sg-label--yellow-20 use {
-    fill: var(--yellow-nds);
-}
-
-/* Label "Vérifiée par des experts" */
-.sg-label--green-20 {
-    background-color: #2b3e35;
-}
-.sg-label--green-20 .sg-label__text {
-    color: var(--green-nds) !important;
-}
-.sg-label--green-20 use {
-    fill: var(--green-nds);
 }
