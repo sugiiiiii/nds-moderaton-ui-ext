@@ -30,9 +30,13 @@ function main() {
     theme_button_div.onclick = show_panel;
 
     const span_button_theme = document.createElement("span");
-    span_button_theme.id = "span-button-theme";
-    span_button_theme.textContent = "arkmode ";
+    span_button_theme.id = "theme-button-span";
+    span_button_theme.textContent = "arkmode: ";
+    span_button_theme.style.paddingTop = "0.58rem";
     span_button_theme.style.fontSize = ".875rem";
+    span_button_theme.style.transition = "200ms";
+    span_button_theme.style.display = "inline-flex";
+    span_button_theme.style.marginRight = "1em";
     content_div.appendChild(span_button_theme);
 
     const button_theme = document.createElement("input");

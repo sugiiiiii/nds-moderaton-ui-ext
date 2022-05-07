@@ -827,12 +827,9 @@ input:checked + .switch:active::before {
     background-color: inherit;
     border:none;
     font-size: 12px;
-    line-height: 12px;
-    font-weight: 700;
 }
 #theme-button-div {
     display: inline-flex;
-    justify-content: center;
     position: fixed;
     right: 0;
     z-index: 100;
@@ -847,23 +844,15 @@ input:checked + .switch:active::before {
     font-size: 12px;
     line-height: 12px;
     font-weight: 700;
-    text-align: center;
 }
 #content-div {
     color: white;
     border-radius: 8px;
     transform: translateX(0%);
     transition: 200ms;
-
-    position: relative;
-    background: black none;
-    box-shadow: none;
-    padding: 4px 0 0 0;
 }
 
 #theme-button-span {
     color: white;
 }
-
-
 /* ------------------------------------------------------------------------ */
