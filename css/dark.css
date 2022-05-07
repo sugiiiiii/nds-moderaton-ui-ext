@@ -740,6 +740,12 @@ div[data-testid="looking_for_more_banner"] {
     display: none;
 }
 
+/* Box 'réponse en train d'être rédigé */
+.brn-qpage-next-answer-box {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+
 /* ------------------------------------------------------ */
 /*            Pop-up modération sur page devoir           */
 /* ------------------------------------------------------ */
