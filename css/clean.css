@@ -817,30 +817,53 @@ input:checked + .switch:active::before {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2) !important;
 }
 
-/* Theme button */
+/* ------------------------------------------------------ */
+/*                   Bouton switch thème                  */
+/* ------------------------------------------------------ */
+
 #theme-button-panel {
-    margin-bottom: 3px;
-    border-radius: 16px;
-    padding: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: inherit;
+    border:none;
     font-size: 12px;
-    background-color: white;
-    border: 2px solid #282828;
-    color: black;
+    line-height: 12px;
+    font-weight: 700;
 }
 #theme-button-div {
+    display: inline-flex;
+    justify-content: center;
     position: fixed;
-    right: 10px;
-    top: 40rem;
+    right: 0;
     z-index: 100;
+    top: 12rem;
+    height: 32px;
+    padding: 0 16px;
+
+    background: black;
+    border-radius: 16px;
+    margin-right: 0.75rem;
+
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    text-align: center;
 }
 #content-div {
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: 2px solid #282828;
+    color: white;
     border-radius: 8px;
-    transform: translateX(0px);
+    transform: translateX(0%);
     transition: 200ms;
+
+    position: relative;
+    background: black none;
+    box-shadow: none;
+    padding: 4px 0 0 0;
 }
+
+#theme-button-span {
+    color: white;
+}
+
 
 /* ------------------------------------------------------------------------ */

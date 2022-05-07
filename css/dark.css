@@ -621,13 +621,8 @@ div[style="background-color: rgb(238, 170, 170);"] {
 /* ------------------------------------------------------ */
 
 /* Theme button */
-#theme-button-panel {
-    background-color: black;
-    color: var(--dark-global-text-color);
-}
-#content-div {
-    background-color: black;
-    color: var(--dark-global-text-color);
+#theme-button-span {
+    color: white;
 }
 
 /* ------------------------------------------------------ */
@@ -775,7 +770,7 @@ div[data-testid="looking_for_more_banner"] {
     color: #d0b73b;
 }
 
-/* Titre de la Pop-up */
+    /* Titre de la Pop-up */
 #moderate-task-toplayer .toplayer-header .heading {
     color: var(--dark-global-text-color);
 }

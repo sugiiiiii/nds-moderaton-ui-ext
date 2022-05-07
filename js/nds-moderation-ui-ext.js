@@ -14,7 +14,8 @@ function main() {
 
     const theme_button_text = document.createElement("span");
     theme_button_text.id = "theme-button-span";
-    theme_button_text.textContent = "Thème";
+    theme_button_text.textContent = "D";
+    theme_button_text.onclick = show_panel;
     theme_button.appendChild(theme_button_text);
 
     const content_div = document.createElement("div");
@@ -26,10 +27,11 @@ function main() {
 
     const theme_button_div = document.createElement("div");
     theme_button_div.id = "theme-button-div";
+    theme_button_div.onclick = show_panel;
 
     const span_button_theme = document.createElement("span");
     span_button_theme.id = "span-button-theme";
-    span_button_theme.textContent = "Thème sombre:  ";
+    span_button_theme.textContent = "arkmode ";
     span_button_theme.style.fontSize = ".875rem";
     content_div.appendChild(span_button_theme);
 
