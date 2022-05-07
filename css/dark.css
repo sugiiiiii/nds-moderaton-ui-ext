@@ -885,3 +885,22 @@ ul[data-testid="achievements_list_template"] {
 .AchievementsListTemplate-module__listItem--1YSJc+* {
     border-color: var(--dark-light-color);
 }
+
+/* Badge réponse certifié */
+div[data-testid="user_profile_content_body_confirmed_label"] {
+    background-color: #13db779e;;
+}
+
+/* Onglet 'Amis' */
+div[data-testid="profile_page_friends"] {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+
+/* 'VOIR PLUS' Button */
+div[data-testid="user_profile_load_more_button"] {
+    background-color: var(--blue-nds) !important;
+}
+div[data-testid="user_profile_load_more_button"]:hover {
+    background-color: var(--blue-hover-nds) !important;
+}
