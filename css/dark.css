@@ -652,6 +652,11 @@ div[style="background-color: rgb(238, 170, 170);"] {
     outline: none;
 }
 
+/* Question supprimée */
+.QuestionBoxLayout-module__contentDeleted--1Y_Fn {
+    background-color: #dd4a35;
+}
+
 /* Bordures & fonds des zones */
 .QuestionBoxLayout-module__box--3D9pn {
     background-color: var(--dark-back-color);
