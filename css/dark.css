@@ -290,12 +290,17 @@ div[data-testid="tooltip_content"] * {
     background-color: var(--dark-light-color);
 }
 
-/* Coulour de fond des notifs */
+/* Coulour de fond des notifs lues */
 .NotificationsListItem__read--2I0ce, .MessagesListItem__read--3Shls {
-    background-color: #232323;
+    background-color: #232323 !important;
 }
-.MessagesListItem__read--3Shls:hover {
-    background-color: var(--dark-back-color);
+
+/* Fond des notifs non-lues */
+.NotificationsListItem__content--17jCq {
+    background-color:  #191919;
+}
+.NotificationsListItem__clickable--2yDvB:hover {
+    background-color: #232323;
 }
 
 /* Divider entre les 3 boutons & contenus */
