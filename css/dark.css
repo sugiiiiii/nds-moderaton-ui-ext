@@ -904,3 +904,12 @@ div[data-testid="user_profile_load_more_button"] {
 div[data-testid="user_profile_load_more_button"]:hover {
     background-color: var(--blue-hover-nds) !important;
 }
+
+/* Icones */
+.sg-button__icon {
+    color: var(--dark-global-text-color);
+}
+
+/* ------------------------------------------------------ */
+/*                     Page des succès                    */
+/* ------------------------------------------------------ */
