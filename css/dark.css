@@ -1083,3 +1083,48 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > header > div
 .brn-footer {
     background-color: var(--dark-footer-back-color);
 }
+
+
+/* ------------------------------------------------------ */
+/*                       Messagerie                       */
+/* ------------------------------------------------------ */
+
+/* Message previex text */
+.sg-media__content {
+    color: var(--dark-global-text-color);
+}
+
+/* Message preview box */
+.sg-media--clickable {
+    background-color: var(--dark-light-color);
+}
+.sg-media--clickable:hover {
+    background-color: var(--dark-global-box-hover-color);
+}
+
+/* Contours */
+.sg-box--border {
+    border: 2px solid var(--dark-light-color);
+}
+.brn-messages__conversations:after {
+    border-right: 2px solid var(--dark-light-color);
+}
+
+/* Input */
+.brn-chatbox__footer {
+    background: var(--dark-back-color);
+}
+.sg-textarea--nested {
+    border: none !important;
+}
+.sg-textarea:focus {
+    background: var(--dark-light-color);
+}
+
+/* Couleurs des messages */
+.sg-box--blue-40 {
+    background-color: #00395e;
+}
+.sg-box--gray-40 {
+    background: #30485c;
+}
