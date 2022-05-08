@@ -1040,3 +1040,46 @@ div.nextAvailableRank {
 div#main-right h3.cufonable {
     color: var(--dark-global-text-color);
 }
+
+/* ------------------------------------------------------ */
+/*            Page classement des moderateurs             */
+/* ------------------------------------------------------ */
+
+/* Animation navbar */
+.brn-placeholder__animation {
+    display: none;
+}
+
+/* Navbar */
+.brn-header-placeholder {
+    background-color: var(--dark-back-color);
+    border: 2px solid var(--dark-light-color);
+}
+.brn-header-placeholder__inner-wrapper,
+.brn-header-placeholder__subnav
+{
+    background-color: var(--dark-back-color);
+}
+.brn-header-placeholder__subnav-wrapper:after {
+    background-color: var(--dark-light-color);
+}
+
+/* Elements de préchargement inutiles */
+body > div.js-page-wrapper > div > div.brn-header-container > div > header > div > div.brn-header-placeholder__inner-wrapper > div.sg-flex.sg-flex--align-items-center.brn-header-placeholder__children-wrapper > div > div.sg-flex.sg-flex--full-width.sg-flex--column > div > div > div.sg-hide-for-medium-down.sg-flex.sg-flex--full-width,
+body > div.js-page-wrapper > div > div.brn-header-container > div > header > div > div.brn-header-placeholder__subnav-wrapper > div > div.sg-flex.sg-flex--full-width.sg-flex--column.brn-header-placeholder__subnav-texts > div
+{
+    display: none;
+}
+
+/* Tables des listes */
+.brn-data-table__row {
+    background-color: var(--dark-global-box-hover-color);
+}
+.brn-data-table__row:nth-child(2n) {
+    background: #565656;
+}
+
+/* Footer */
+.brn-footer {
+    background-color: var(--dark-footer-back-color);
+}
