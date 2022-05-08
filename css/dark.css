@@ -1217,3 +1217,140 @@ body > div.js-page-wrapper > div > div.sg-layout__container.js-main-container > 
 .brn-rank-container {
     background-color: var(--dark-back-color);
 }
+
+/* ------------------------------------------------------ */
+/*         Nosdevoirs presentation/Help Page              */
+/* ------------------------------------------------------ */
+
+/* Navbar background */
+.hero {
+    background: var(--dark-light-color);
+}
+.main-header--sticky {
+    background: var(--dark-light-color);
+}
+
+/* Gros texte */
+.sg-text-bit--black {
+    color: var(--dark-global-text-color);
+}
+
+/* Last button navbar */
+.main-header__link:last-child {
+    background-color: var(--dark-back-color);
+}
+
+/* Navbar bottom button */
+.quick-navigation__list-item a {
+    color: var(--dark-global-text-color);
+}
+
+.values-item--light-blue {
+    color: var(--dark-light-color);
+}
+
+/* Info bar */
+.info-bar {
+    background: var(--dark-light-color);
+}
+
+/* Footer */
+.main-footer {
+    background: var(--dark-footer-back-color);
+}
+
+/* Footer button */
+.dropdown--alt .dropdown__select {
+    background-color: var(--dark-light-color);
+}
+.dropdown--alt .dropdown__select:hover {
+    background-color: var(--dark-global-box-hover-color);
+}
+
+/* Footer text */
+body > footer > div > div.main-footer__first.small-12.medium-12.large-2 > div > p:nth-child(4)
+{
+    color: var(--dark-global-text-color);
+}
+
+/* 'Nous savons pourquoi tu es ici...' */
+.hero:not(.hero--single-position) .column p {
+    color: var(--dark-global-text-color);
+}
+.promise__item--filled:after {
+    background-color: var(--dark-light-color);
+}
+.promise__item:after {
+    border: 16px solid var(--dark-light-color);
+}
+.quote__inner {
+    background: var(--dark-light-color);
+}
+
+/* Parents */
+.hero.brainly-plus {
+    background: var(--dark-light-color);
+}
+.values-item--filled:after {
+    background-color: var(--dark-light-color);
+    border-color: var(--dark-light-color);
+}
+.hero.school_teachers {
+    background: var(--dark-light-color);
+}
+.form__column {
+    background: var(--dark-light-color);
+}
+body > main > section.values > div:nth-child(2) > div > div:nth-child(1),
+body > main > section.values > div:nth-child(2) > div > div:nth-child(3)
+{
+    color: var(--dark-light-color) !important;
+}
+
+/* Bénévoles */
+.cards .card__item {
+    border: 16px solid var(--dark-light-color);
+    background: var(--dark-back-color);
+}
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(1) > div.opinions-item.together-item__meta > p,
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(1) > div.opinions-item__inner.together-item__inner > p,
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(2) > div.opinions-item.together-item__meta > p,
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(2) > div.opinions-item__inner.together-item__inner > p,
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(3) > div.opinions-item.together-item__meta > p,
+body > main > section.opinions > div:nth-child(2) > div > div:nth-child(3) > div.opinions-item__inner.together-item__inner > p
+{
+    color: var(--dark-global-text-color);
+}
+
+/* Code d'hooneur */
+.hero.code {
+    background: var(--dark-light-color);
+}
+.columns__border:after {
+    border-color: var(--dark-light-color);
+}
+body > main > section:nth-child(6) > div > div > div
+{
+    color: var(--dark-light-color) !important;
+}
+
+/* Nos politiques */
+.sg-dropdown__items {
+    background-color: var(--dark-light-color);
+    color: var(--dark-global-text-color);
+}
+.sg-dropdown__item-hole:hover, .sg-dropdown__item-hole:active {
+    background-color: var(--dark-global-box-hover-color);
+}
+.hero.honor {
+    background: var(--dark-light-color);
+}
+body > main > section:nth-child(5) > div > div > div
+{
+    color: var(--dark-light-color) !important;
+}
+
+/* Centre d'aide */
+.hero.safety {
+    background: var(--dark-light-color);
+}
