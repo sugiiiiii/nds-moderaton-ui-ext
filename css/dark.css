@@ -1009,3 +1009,34 @@ div#content-old ol.tasks-list .task .task-content a {
     color: var(--dark-global-text-color);
 }
 
+
+/* ------------------------------------------------------ */
+/*                  Liste des modérateurs                 */
+/* ------------------------------------------------------ */
+
+/* box de rang */
+#html div.user-data .user-nick {
+    background-color: var(--dark-back-color);
+    border: 1px solid var(--dark-global-box-hover-color);
+}
+#html div.user-data .user-nick:hover {
+    border: 1px solid var(--dark-global-box-hover-color);
+}
+
+/* nombre de points et actions aujourd'hui */
+div#main-right div.beige-background {
+    border: 2px solid var(--dark-global-box-hover-color);
+}
+.beige-background {
+    background-color: var(--dark-light-color);
+}
+
+/* Prochain rang */
+div.nextAvailableRank {
+    color: var(--dark-global-text-color);
+}
+
+/* 'Amis actifs' */
+div#main-right h3.cufonable {
+    color: var(--dark-global-text-color);
+}
