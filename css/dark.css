@@ -746,6 +746,39 @@ div[data-testid="looking_for_more_banner"] {
     border: 2px solid var(--dark-light-color);
 }
 
+/* ------ Répondre ------ */
+/* Navbar */
+.sg-header__container {
+    background-color: var(--dark-back-color);
+    border-bottom: 2px solid var(--dark-light-color);
+}
+/* Background */
+.brn-answer-editor-layer {
+    background-color: var(--dark-back-color);
+}
+/* Text editor widgets */
+.TextEditor__editorBox--1QkjX {
+    background-color: black !important;
+}
+/* Text editor container */
+.TextEditor__editor--14ZAy {
+    background-color: var(--dark-light-color) !important;
+}
+/* LaTex */
+.Toolbar__equationsPreview--3h-kb {
+    background-color: var(--dark-light-color) !important;
+}
+.sg-math-symbol-icon--icon-gray-70 {
+    color: var(--dark-global-text-color) !important;
+}
+img[data-testid="answer_editor_equations_preview_image"] {
+    background-color: white !important;
+}
+.Toolbar__toolbarShelf--3Yqju {
+    background-color: var(--dark-back-color) !important;
+}
+
+
 /* ------------------------------------------------------ */
 /*            Pop-up modération sur page devoir           */
 /* ------------------------------------------------------ */
