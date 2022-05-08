@@ -711,11 +711,6 @@ li.HorizontalList-module__item--2xXqD div {
     border-color: var(--dark-light-color);
 }
 
-/* Résolu vérifié par expert */
-div[data-testid="question_box_header_side_expert_verified"] div {
-    background-color: var(--green-nds);
-}
-
 /* Réponse vérifié par expert */
 .AnswerBoxLayout-module__boxExpertVerified--Ljdgc div[data-testid="answer_box_header"] {
     background-color: var(--green-nds);
@@ -829,6 +824,11 @@ span.subcategories[style="display: inline;"] > input:hover {
 .moderation-response .action-box.action-delete.boxxy.opened > div > p:last-child > button.resign:hover {
     color: var(--dark-global-text-color) !important;
     background-color: var(--dark-global-box-hover-color) !important;
+}
+
+/* Question signalée pop-up modération */
+#moderate-task-toplayer .toplayer-body .moderation-task.reported>.contents>.boxxy.text {
+    background-color: #38310b;
 }
 
 
@@ -946,13 +946,13 @@ div.sg-label--yellow-20 use {
 
 /* Label "Vérifiée par des experts" */
 .sg-label--green-20 {
-    background-color: #2b3e35;
+    background-color: #2b3e35 !important;
 }
 .sg-label--green-20 .sg-label__text {
     color: var(--green-nds) !important;
 }
 .sg-label--green-20 use {
-    fill: var(--green-nds);
+    fill: var(--green-nds) !important;
 }
 /* ------------------------------------------------------ */
 /*               Profile page (old version)               */
