@@ -341,6 +341,11 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
     background-color:var(--dark-footer-back-color);
 }
 
+/* Selection de la langue */
+.LanguageAndRegionSwitcher-module__container--3sFDu {
+    background-color: var(--dark-light-color);
+}
+
 
 /* ------------------------------------------------------ */
 /*                     Side menu modo                     */
