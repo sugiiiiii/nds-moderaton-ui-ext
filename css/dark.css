@@ -1198,3 +1198,22 @@ div#content-old a.delete_account {
     background-color: var(--dark-back-color) !important;
     border-bottom: 2px solid var(--dark-light-color) !important;
 }
+
+/* ------------------------------------------------------ */
+/*                     Rank list Page                     */
+/* ------------------------------------------------------ */
+
+/* L'icon des points Brainly */
+body > div.js-page-wrapper > div > div.sg-layout__container.js-main-container > aside > div > div.sg-flex.sg-flex--margin-bottom-m > div > div > div > div:nth-child(1) > div > div.sg-flex.sg-space-x-xs > div:nth-child(1) > div > div > div > div > div > div > div.sg-flex.sg-flex--margin-right-xxs > div > svg > use
+{
+    color: white;
+}
+/* 'Ton influence' */
+body > div.js-page-wrapper > div > div.sg-layout__container.js-main-container > aside > div > div.sg-flex.sg-flex--full-width.sg-flex--column.sg-space-y-m.brn-ads-full-height
+{
+    display: none;
+}
+/* Container description rang */
+.brn-rank-container {
+    background-color: var(--dark-back-color);
+}
