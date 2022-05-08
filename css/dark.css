@@ -1161,3 +1161,40 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > header > div
 .sg-box--gray-40 {
     background: #30485c;
 }
+
+/* ------------------------------------------------------ */
+/*                    Edit user Profile                   */
+/* ------------------------------------------------------ */
+
+/* Button */
+div#content-old .editProfileContent .editProfileList>li>a:hover {
+    background-color: var(--dark-global-box-hover-color);
+}
+div#content-old .editProfileContent .editProfileList>li.choosen>a {
+    background-color: #000000;
+}
+/* Button text */
+div#content-old .editProfileContent .editProfileList>li>a {
+    color: var(--dark-global-text-color);
+}
+/* Background */
+div#content-old .editProfileContent .editBox {
+    background-color: var(--dark-light-color);
+}
+/* Legend */
+div#content-old .editProfileContent .editBox legend {
+    color: var(--dark-global-text-color);
+}
+/* Bouton 'supprimer mon compte' */
+div#content-old a.delete_account {
+    background-color: darkred;
+}
+/* 'Mail' */
+/* Navbar */
+.Header-module__header--1fyGw, .Header-module__innerwrap--2PyoE {
+    background: var(--dark-back-color) !important;
+}
+.Header-module__subnav--1o8Ox {
+    background-color: var(--dark-back-color) !important;
+    border-bottom: 2px solid var(--dark-light-color) !important;
+}
