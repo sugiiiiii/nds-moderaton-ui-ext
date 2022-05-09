@@ -721,8 +721,10 @@ li.HorizontalList-module__item--2xXqD div {
     background-color: var(--green-nds);
     border-radius:5px;
 }
-div[data-testid="answer_box_header"] use {
-    fill: white;
+#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div.AnswerBoxLayout-module__box--2yed7.AnswerBoxLayout-module__boxExpertVerified--Ljdgc > div.AnswerBoxLayout-module__header--2UVWr > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--margin-right-s > div > svg > use,
+#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div.AnswerBoxLayout-module__box--2yed7.AnswerBoxLayout-module__boxExpertVerified--Ljdgc > div.AnswerBoxLayout-module__header--2UVWr > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--align-items-center > div.sg-hide-for-small-only > h3 > div > div > div > div > div > svg > use
+{
+    color: var(--dark-global-text-color);
 }
 .AnswerBoxLayout-module__boxExpertVerified--Ljdgc {
     border: 2px solid var(--green-nds) !important;
