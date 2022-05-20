@@ -1361,3 +1361,82 @@ body > main > section:nth-child(5) > div > div > div
 .hero.safety {
     background: var(--dark-light-color);
 }
+
+
+/* ------------------------------------------------------ */
+/*                        Index                           */
+/* ------------------------------------------------------ */
+
+/* Navbar background */
+.section--KhXv2,
+.header--1kAS3,
+.header--1kAS3:before
+{
+    background-color: var(--dark-back-color);
+}
+
+/* Barres de recherche */
+#hero-search,
+#top-search
+{
+    background: var(--dark-light-color);
+}
+
+/* Section en dessous de la barre de recherche */
+.section--3TnrW {
+    background-color: var(--dark-light-color);
+}
+
+/* Box avis */
+.speech-bubble--1qtwh,
+.carousel-item--1Y45k
+{
+    background-color: var(--dark-light-color);
+}
+.speech-bubble--blue-20--3zjxI,
+#__next > div > div:nth-child(5) > div > div > div.sg-flex.sg-flex--full-width.sg-flex--row > div > ol > li:nth-child(2) > div > div.sg-flex.sg-flex--full-width.sg-flex--column > div.speech-bubble--1qtwh.speech-bubble--start--2onSL.speech-bubble--top--lLkFu.speech-bubble--green-20--YXi63.bubble--1d7Cw
+{
+    border: 16px solid var(--dark-global-box-hover-color)
+}
+body > div.js-page-wrapper > div > div.js-react-registration-toplayer > div > div > div.sg-dialog__container.sg-dialog__container--size-m.sg-dialog__container--open > div
+{
+    background-color: #000000cc !important;
+}
+
+/* Box pre-footer */
+.section--9DHSr {
+    background: var(--dark-light-color);
+}
+
+/* Footer */
+.section--2OZ88 {
+    background: var(--dark-footer-back-color);
+}
+.cookieText--3BVBf,
+.cookieLink--3_kfI,
+.linksSectionLinkText--24NT7,
+.linksSectionRegularText--GlKjM,
+.mobile-app-store-headline--FFmyQ
+{
+    color: var(--dark-global-text-color);
+}
+
+/* ------------------------------------------------------ */
+/*                     Se connecter                       */
+/* ------------------------------------------------------ */
+
+body > div.js-page-wrapper > div > div.sg-layout__container.sg-layout__container--full-page.js-main-container.js-react-sign-in-form
+{
+    background-color: var(--dark-back-color);
+}
+
+/* ------------------------------------------------------ */
+/*                      S'inscrire                        */
+/* ------------------------------------------------------ */
+
+body > div.js-page-wrapper > div > div
+{
+    background-color: var(--dark-back-color);
+}
+
+/* ------------------------------------------------------------------------ */

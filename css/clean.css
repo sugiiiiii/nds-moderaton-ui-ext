@@ -872,4 +872,18 @@ input:checked + .switch:before {
 #theme-button-span {
     color: white;
 }
+
+
+/* ------------------------------------------------------ */
+/*                       Page load                        */
+/* ------------------------------------------------------ */
+
+.js-page-wrapper {
+    display: none;
+}
+
+.brn-header-subnav-expanded {
+    background: var(--dark-back-color);
+}
+
 /* ------------------------------------------------------------------------ */

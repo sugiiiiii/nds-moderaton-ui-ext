@@ -1,4 +1,13 @@
 function main() {
+    const dark_load = document.createElement('style');
+    dark_load.innerHTML = ".js-page-wrapper {\n" +
+        "    display: block !important;\n" +
+        "}\n" +
+        "\n" +
+        "body.brn-header-subnav-expanded {\n" +
+        "    display: \"none\";\n" +
+        "}";
+    document.head.appendChild(dark_load);
     const dark_css_url = chrome.runtime.getURL("css/dark.css");
     addCss(dark_css_url);
     if (!localStorage.getItem('theme')) {
@@ -95,4 +104,4 @@ function show_panel() {
     }
 }
 
-main();
+window.addEventListener('load', main);

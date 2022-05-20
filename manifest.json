@@ -5,6 +5,7 @@
     "manifest_version": 2,
     "content_scripts": [{
         "css": ["css/clean.css", "css/messagerie.css"],
+        "run_at": "document_start",
         "js": ["js/nds-moderation-ui-ext.js"],
         "matches": ["https://nosdevoirs.fr/*"]
     }],
