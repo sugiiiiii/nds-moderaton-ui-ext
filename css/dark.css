@@ -151,6 +151,10 @@ div[data-testid="game_box_stat_item_container"] svg[aria-labelledby="title-point
     fill: white;
 }
 
+.sg-icon--icon-black {
+    color: var(--dark-global-text-color);
+}
+
 /* Textes des boutons */
 .sg-button__text {
     color:var(--dark-global-text-color);
