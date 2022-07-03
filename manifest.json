@@ -1,7 +1,7 @@
 {
     "name": "NDS Updated Moderation",
     "description" : "Rendons l'interface de modération plus agréable",
-    "version": "9.1",
+    "version": "9.82",
     "manifest_version": 2,
     "content_scripts": [{
         "css": ["clean.css", "messagerie.css"],
