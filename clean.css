@@ -816,3 +816,14 @@ input.onlylink {
     margin-bottom: 0.5em;
     margin-top: 0 !important;
 }
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Mise à jour après les changements de Brainly */
+
+/* Fenêtre des notifs + amis */
+.NestedUserPanelBubble-module__panel--fHYof {
+    height: 70vh !important;
+    width: 60vh !important;
+}
