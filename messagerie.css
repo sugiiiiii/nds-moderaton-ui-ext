@@ -30,3 +30,19 @@
     max-height: 70vh !important;
 }
 
+/* Fix Juillet 2022 */
+.sg-box.sg-box--white.sg-box--border.sg-box--padding-m.brn-layout-box {
+    border: none;
+}
+
+#private-messages-container .sg-content-box__actions {
+    display: none;
+}
+
+.brn-chatbox__chat .sg-box.sg-box--padding-m.sg-box--blue-40 {
+    border-radius: 8px 0 8px 8px;
+}
+
+.brn-chatbox__chat .sg-box.sg-box--padding-m.sg-box--gray-40 {
+    border-radius: 0 8px 8px 8px;
+}
