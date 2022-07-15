@@ -7,6 +7,7 @@
 
 #html body.mint {
     background: white !important;
+    min-height: 100vh;
 }
 
 .content {
@@ -727,6 +728,7 @@ textarea.text-reason {
     padding-inline: 2em;
     padding-block: 0.8em !important;
     margin-top: 1.5em;
+    margin-bottom: 1em;
     border-radius: 30px;
     transition: 200ms;
 }
@@ -820,7 +822,7 @@ input.onlylink {
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 /* Ajout des liens dans l'historique de modération */
-a.nds-historique-links {
+a.nds-new-links {
     color: transparent;
     padding-right: 1em;
     margin-right: .1em;
@@ -828,11 +830,28 @@ a.nds-historique-links {
     background-image: url('https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/images/host/arrow-up-right.svg');
     background-position: center;
 }
-a.nds-historique-links:hover {
+a.nds-new-links:hover {
     background-color: rgb(0 116 255 / 15%);
+}
+/* Uniformiser les lignes (cf ClémentCg) */
+li.QuestionActivityGroup-module__listItem--t3Zn- {
+    min-height: 32px;
+}
+
+/* Ajout lien profil old + new */
+a.nds-links {
+    color: #014a82;
 }
 
 /* Cacher bannière "Pose ta question" */
 .js-react-below-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l {
     display: none;
+}
+
+/* Page "Contenus de l'utilisateur" */
+div[clickbox="footer"] {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-top:5em
 }
