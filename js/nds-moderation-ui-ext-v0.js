@@ -44,18 +44,22 @@ function newLinks() {
     // Les liens des répondants
     rpdants = document.querySelectorAll('[data-testid="answer_box_author_link"] span')
     for( i = 0; i < rpdants.length; i++) { 
-        username = rpdants[i].innerHTML
-        rpdantsId = getUserByNick(username, usersArray).id
-        rpdants[i].innerHTML = `<a href="https://nosdevoirs.fr/profil/${username}-${rpdantsId}" class="nds-links" target="_blank">${username}</a>`
+        try {
+            username = rpdants[i].innerHTML
+            rpdantsId = getUserByNick(username, usersArray).id
+            rpdants[i].innerHTML = `<a href="https://nosdevoirs.fr/profil/${username}-${rpdantsId}" class="nds-links" target="_blank">${username}</a>`
 
-        // Création du nouveau lien <a>
-        newLink = document.createElement('a');
-        newLink.href = `https://nosdevoirs.fr/app/profile/${rpdantsId}`;
-        newLink.classList.add("nds-new-links")
-        newLink.textContent = '+';
+            // Création du nouveau lien <a>
+            newLink = document.createElement('a');
+            newLink.href = `https://nosdevoirs.fr/app/profile/${rpdantsId}`;
+            newLink.classList.add("nds-new-links")
+            newLink.textContent = '+';
 
-        // Injection
-        rpdants[i].append(newLink)
+            // Injection
+            rpdants[i].append(newLink)
+        } catch (error) {
+            console.debug(error)
+        }
     }
 
     // Les liens du questionneur
@@ -102,8 +106,8 @@ function newLinks() {
 
 // window.addEventListener('load', newLinks);
 waitForElm('[data-testid="entry_text_formatter"]').then((elm) => {
-    console.log('✅ Historique enrichi');
     newLinks()
+    console.log('✅ Historique enrichi');
 });
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -113,10 +117,11 @@ waitForElm('[data-testid="entry_text_formatter"]').then((elm) => {
 
 function newProfile() {
     userName = document.querySelector('h1[data-testid="user_profile_username"]').innerHTML
-    userID = document.querySelector('.UserActivity__tab--dTf-w').href.slice(-15).replace('/answers', '')
+    userID = document.querySelector('.UserActivity__tab--dTf-w').href.slice(-15).replace('/answers', '').replace('/', '')
 
     let summary = document.querySelector('[data-testid="profile_page_summary"] :first-child')
 
+    // Ancien profil
     var newProfileBtn = document.createElement("div")
     newProfileBtn.classList += 'sg-flex sg-flex--full-width sg-flex'
     newProfileBtn.innerHTML = `<a class="sg-button sg-button--m sg-button--solid-indigo sg-button--full-width sg-flex--margin-bottom-s" href="https://nosdevoirs.fr/profil/${userName}-${userID}">      <span class="sg-button__icon sg-button__icon--m">
@@ -129,6 +134,7 @@ function newProfile() {
         <span class="sg-button__text">Ancien profil</span>
     </a>`
 
+    // Voir les contenus
     var newContentBtn = document.createElement("div")
     newContentBtn.classList += 'sg-flex sg-flex--full-width sg-flex'
     newContentBtn.innerHTML = `<a class="sg-button sg-button--m sg-button--solid-light sg-flex--margin-bottom-s sg-flex--full-width" href="https://nosdevoirs.fr/users/user_content/${userID}">
@@ -147,9 +153,41 @@ function newProfile() {
 // ------------------------------------------------------------------------------------------------------------------
 
 waitForElm('h1[data-testid="user_profile_username"]').then((elm) => {
-    console.log('✅ Profil enrichi');
     newProfile()
+    console.log('✅ Profil enrichi');
 });
+
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+// Nouveau bouton profil dans les DM
+
+// ------------- ATTENTION
+// Ca ne marche que sur la conv ouverte au load
+function newDMBtn() {
+    convUser = document.querySelector('.sg-content-box__header .sg-actions-list__hole a')
+    
+    // Création du nouveau lien
+    newDMLink = 'https://nosdevoirs.fr/app/profile/' + convUser.href.slice(-7).replace('-', '')
+    newDM = document.createElement('a');
+    newDM.href = newDMLink;
+    newDM.classList.add("nds-new-links")
+    newDM.textContent = '+';
+    
+    
+    function insertAfter(newNode, existingNode) {
+        existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+    }
+    
+    insertAfter(newDM, convUser)
+}
+// ------------------------------------------------------------------------------------------------------------------
+
+waitForElm('.js-chatbox a[title]').then((elm) => {
+    newDMBtn()
+    console.log('✅ Messagerie enrichie');
+});
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------

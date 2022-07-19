@@ -46,3 +46,10 @@
 .brn-chatbox__chat .sg-box.sg-box--padding-m.sg-box--gray-40 {
     border-radius: 0 8px 8px 8px;
 }
+
+/* Pseudo du chat ouvert */
+/* Pour permettre l'ajout des nouveaux liens */
+.sg-headline--small[title] {
+    display: contents;
+    /* Agit comme un inline-block mais laisse des margins inherit */
+}
