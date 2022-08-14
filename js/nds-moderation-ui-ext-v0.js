@@ -65,18 +65,22 @@ function newLinks() {
     // Les liens du questionneur
     qstner = document.querySelectorAll('[data-testid="question_box_header_author_link"] span')
     for( i = 0; i < qstner.length; i++) { 
-        username = qstner[i].innerHTML
-        qstnerId = getUserByNick(username, usersArray).id
-        qstner[i].innerHTML = `<a href="https://nosdevoirs.fr/profil/${username}-${qstnerId}" class="nds-links" target="_blank">${username}</a>`
+        try {
+            username = qstner[i].outerText // Permet de renvoyer seulement le nom, propriété du NodeList
+            qstnerId = getUserByNick(username, usersArray).id
+            qstner[i].innerHTML = `<a href="https://nosdevoirs.fr/profil/${username}-${qstnerId}" class="nds-links" target="_blank">${username}</a>`
 
-        // Création du nouveau lien <a>
-        newLink = document.createElement('a');
-        newLink.href = `https://nosdevoirs.fr/app/profile/${qstnerId}`;
-        newLink.classList.add("nds-new-links")
-        newLink.textContent = '+';
+            // Création du nouveau lien <a>
+            newLink = document.createElement('a');
+            newLink.href = `https://nosdevoirs.fr/app/profile/${qstnerId}`;
+            newLink.classList.add("nds-new-links")
+            newLink.textContent = '+';
 
-        // Injection
-        qstner[i].append(newLink)
+            // Injection
+            qstner[i].append(newLink)
+        } catch (error) {
+            console.debug(error)
+        }
     }
 
     // ----------------------------------------------------------------------------------------------
@@ -86,20 +90,41 @@ function newLinks() {
     // Choppe un parent sûr qui risque pas de changer avec les Màj Brainly
     var parent = document.querySelectorAll('[data-testid="entry_text_formatter"]')
 
-    for(i = 0; i < historique.length; i++) {
-        histHref = historique[i].href; // Lien du <a>
-        histUserID = histHref.slice(-7).replace('-', ''); // ID de l'utilisateur-trice
-        histNewHref = 'https://nosdevoirs.fr/app/profile/' + histUserID; // URL vers le profil version nouvelle
-        
-        // Création du nouveau lien <a>
-        histLink = document.createElement('a');
-        histLink.href = histNewHref;
-        histLink.classList.add("nds-new-links")
-        histLink.textContent = '+';
-    
-        // Injection
-        parent[i].insertBefore(histLink, parent[i].children[0])
-        // console.log('Added')
+    function insertAfter(newNode, existingNode) {
+        existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+    }
+
+    for(i = 0; i < parent.length; i++) {
+        try {
+            // histHref = historique[i].href; // Lien du <a>
+            histHref = parent[i].children[0].href; // Lien du <a>
+            histUserID = histHref.slice(-7).replace('-', ''); // ID de l'utilisateur-trice
+            histNewHref = 'https://nosdevoirs.fr/app/profile/' + histUserID; // URL vers le profil version nouvelle
+            
+            // Création du nouveau lien <a>
+            histLink = document.createElement('a');
+            histLink.href = histNewHref;
+            histLink.classList.add("nds-new-links")
+            histLink.textContent = '+';
+            
+            // Injection
+            if(parent[i].children.length >= 2 && parent[i].children[0].classList.contains('nds-new-links')) { //&& parent[i].children[0].classList.contains('nds-new-links')
+                console.log('Deux liens, deuxième ajouté')
+                parent[i].insertBefore(histLink, parent[i].children[2])
+            } else if (parent[i].children.length >= 2 && !parent[i].children[0].classList.contains('nds-new-links')) {
+                console.log('Deux liens, premier ajouté')
+                parent[i].insertBefore(histLink, parent[i].children[0])
+            } else {
+                console.log('Un seul lien', parent[i].children.length, parent[i].children[0].classList.contains('nds-new-links'))
+                parent[i].insertBefore(histLink, parent[i].children[0])
+            }
+            // console.log('Added')
+
+        } catch (error) {
+            console.debug(error)
+            console.debug('Problème au lien suivant')
+            console.debug(histLink)
+        }
     }
 }
 // ------------------------------------------------------------------------------------------------------------------
@@ -144,7 +169,7 @@ function newProfile() {
     </a>`
 
     function insertAfter(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+        existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
     }
 
     insertAfter(newProfileBtn, summary)
