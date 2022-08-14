@@ -855,3 +855,11 @@ div[clickbox="footer"] {
     bottom: 0px;
     margin-top:5em
 }
+
+/* Mise en forme des contenus ouvert dans l'historique */
+[data-testid="question_activity_item"] > ul {
+    background: var(--gray-20);
+    border-radius: 8px;
+    padding: 0.5em 1em 0.1em 1em;
+    margin-top: 0.3em;
+}
