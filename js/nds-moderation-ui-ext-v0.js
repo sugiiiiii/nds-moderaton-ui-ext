@@ -79,7 +79,11 @@ function newLinks() {
             // Injection
             qstner[i].append(newLink)
         } catch (error) {
-            console.debug(error)
+            if(error.message == "Cannot read properties of undefined (reading 'id')") {
+                console.debug("🔌 Un lien est introuvable")
+            } else {
+                console.debug(error)
+            }
         }
     }
 
@@ -108,14 +112,14 @@ function newLinks() {
             histLink.textContent = '+';
             
             // Injection
-            if(parent[i].children.length >= 2 && parent[i].children[0].classList.contains('nds-new-links')) { //&& parent[i].children[0].classList.contains('nds-new-links')
-                console.log('Deux liens, deuxième ajouté')
+            if(parent[i].children.length >= 2 && parent[i].children[0].classList.contains('nds-new-links')) {
+                // console.log('Deux liens, deuxième ajouté')
                 parent[i].insertBefore(histLink, parent[i].children[2])
             } else if (parent[i].children.length >= 2 && !parent[i].children[0].classList.contains('nds-new-links')) {
-                console.log('Deux liens, premier ajouté')
+                // console.log('Deux liens, premier ajouté')
                 parent[i].insertBefore(histLink, parent[i].children[0])
             } else {
-                console.log('Un seul lien', parent[i].children.length, parent[i].children[0].classList.contains('nds-new-links'))
+                // console.log('Un seul lien', parent[i].children.length, parent[i].children[0].classList.contains('nds-new-links'))
                 parent[i].insertBefore(histLink, parent[i].children[0])
             }
             // console.log('Added')
