@@ -863,3 +863,16 @@ div[clickbox="footer"] {
     padding: 0.5em 1em 0.1em 1em;
     margin-top: 0.3em;
 }
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Suppressions d'encadrés inutiles entre la question et l'historique */
+
+div[data-testid="add_answer_reminder"] {
+    display: none;
+}
+
+div[data-testid="answering_feed"] {
+    display: none;
+}
