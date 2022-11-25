@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "content_scripts": [{
         "css": ["clean.css", "messagerie.css"],
-        "matches": ["https://nosdevoirs.fr/*"],
+        "matches": ["https://nosdevoirs.fr/*", "https://eodev.com/*", "https://brainly.in/*", "https://brainly.pl/*", "https://brainly.lat/*", "https://znanija.com/*", "https://brainly.ro/*", "https://brainly.com/*"],
         "js": ["js/nds-moderation-ui-ext-v0.js"]
     }],
     "page_action": {
