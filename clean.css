@@ -876,3 +876,19 @@ div[data-testid="add_answer_reminder"] {
 div[data-testid="answering_feed"] {
     display: none;
 }
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Question supprimées */
+
+.QuestionBoxLayout-module__contentDeleted--kouxT {
+    background-color: var(--red-10);
+    border-radius: 6px;
+    outline: solid 1.5px var(--red-20);
+}
+
+.QuestionBoxLayout-module__contentDeleted--kouxT h1 > * {
+    color: var(--red-50) !important;
+    opacity: 80%;
+}
