@@ -102,6 +102,13 @@ function show_panel() {
     } else {
         theme_panel.style.display = "none";
     }
+
+    $(function(){
+        $('#body_holder').hide();
+    });
+    $(window).load(function() {
+        $("#body_holder").show();
+    });
 }
 
 window.addEventListener('load', main);
