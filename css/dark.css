@@ -75,7 +75,7 @@ body {
 /* ------------------------------------------------------ */
 
 /* navbar module */
-.Header-module__header--1fyGw, .Header-module__innerwrap--2PyoE, .Header-module__subnav--1o8Ox {
+header[class^="Header-module"] {
     background:var(--dark-back-color);
     color:var(--dark-global-text-color);
 }
@@ -289,26 +289,29 @@ div[data-testid="tooltip_content"] * {
 /*     Onglet Notifications & MP & Onglet Personnel       */
 /* ------------------------------------------------------ */
 
-/* Fond du pop-up */
-.NestedUserPanelBubble__content--1kSA_, .UserMenuBubble__bubble--151LI {
+[class*="NestedUserPanelBubble-module"] {
+    background: var(--dark-back-color);
+}
+
+[class*="NestedUserPanelBubble__content"], [class*="UserMenuBubble__bubble"] {
     background-color: var(--dark-light-color);
 }
 
 /* Coulour de fond des notifs lues */
-.NotificationsListItem__read--2I0ce, .MessagesListItem__read--3Shls {
-    background-color: #232323 !important;
+[class*="NotificationsListItem__read"], [class*="MessagesListItem__read"] {
+    background-color: var(--dark-back-color);
 }
 
 /* Fond des notifs non-lues */
-.NotificationsListItem__content--17jCq {
+[class*="NotificationsListItem__content"] {
     background-color:  #191919;
 }
-.NotificationsListItem__clickable--2yDvB:hover {
-    background-color: #232323;
+[class*="NotificationsListItem__clickable"]:hover {
+    background-color: var(--dark-back-color);
 }
 
 /* Divider entre les 3 boutons & contenus */
-body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-child(2) > header > div.Header-module__limitWidth--37U5t > div > div.sg-flex.sg-flex--align-items-center.Header-module__childrenWrapper--3RYyB > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div > div > div > div > div.NestedUserPanelTabs__header--39UHl > div.NestedUserPanelTabs__separator--36QC0 {
+[class*="NestedUserPanelTabs__separator"] {
     border-color: var(--dark-global-box-color);
 }
 /* Avatar des utilisateurs en notifs */
@@ -341,12 +344,12 @@ body > div.js-page-wrapper > div > div.brn-header-container > div > div:nth-chil
 /*                         Footer                         */
 /* ------------------------------------------------------ */
 
-.FooterLayout-module__footer--jB_Pv {
+[class^="FooterLayout"] {
     background-color:var(--dark-footer-back-color);
 }
 
 /* Selection de la langue */
-.LanguageAndRegionSwitcher-module__container--3sFDu {
+[class*="LanguageAndRegionSwitcher-module__container"] {
     background-color: var(--dark-light-color);
 }
 
@@ -644,7 +647,7 @@ div[style="background-color: rgb(238, 170, 170);"] {
 /* ------------------------------------------------------ */
 
 /* Section commentaire */
-.Comments-module__comments--3qGAy {
+.Comments-module__comments--3qGAy, div[class^="Comments-module__comments"] {
     border-top: none !important;
 }
 .sg-textarea {
@@ -662,14 +665,14 @@ div[style="background-color: rgb(238, 170, 170);"] {
 }
 
 /* Question supprimée */
-.QuestionBoxLayout-module__contentDeleted--1Y_Fn {
+div[class^="QuestionBoxLayout-module__contentDeleted"] {
     background-color: #dd4a35;
 }
 
 /* Bordures & fonds des zones */
-.QuestionBoxLayout-module__box--3D9pn {
+div[class^="QuestionBoxLayout-module"] {
     background-color: var(--dark-back-color);
-    border: 2px solid var(--dark-light-color);
+    border-color: var(--dark-light-color);
 }
 .sg-box--gray-10 {
     background-color: var(--dark-back-color);
@@ -695,8 +698,8 @@ article[aria-label="Question"] svg {
 /* Les infos du devoirs (classe, matière, date) */
 /* Les infos de celui qui a répondu */
 ul[data-testid="question_box_header_breadcrumbs"] li *, 
-li.HorizontalList-module__item--2xXqD div *, 
-li.HorizontalList-module__item--2xXqD div {
+li[class*="HorizontalList-module__item"] div *, 
+li[class*="HorizontalList-module__item"] div {
     color: #687b8c !important;
     font-weight:600;
 }
@@ -707,30 +710,30 @@ li.HorizontalList-module__item--2xXqD div {
 }
 
 /* Bouton "Voir les réponses" */
-.SeeAnswersButton-module__buttonCounter--1LAZ_ > div > div {
+[div*="SeeAnswersButton-module__buttonCounter"] > div > div {
     color: var(--blue-nds) !important;
 }
 
 /* Cadre de réponse */
-.AnswerBoxLayout-module__box--2yed7 {
+[class*="AnswerBoxLayout-module__box"] {
     background-color: transparent;
     border: 2px solid var(--dark-light-color);
 }
-.AnswerBoxHeader-module__header--2JjZN {
+[class*="AnswerBoxHeader-module__header"], [class^="AnswerBoxHeaderSemanticScore-module"] {
     border-color: var(--dark-light-color);
 }
 
 /* Réponse vérifié par expert */
-.AnswerBoxLayout-module__boxExpertVerified--Ljdgc div[data-testid="answer_box_header"] {
+[class*="AnswerBoxLayout-module__boxExpertVerified"] div[data-testid="answer_box_header"] {
     background-color: var(--green-nds);
     border-radius:5px;
 }
-#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div.AnswerBoxLayout-module__box--2yed7.AnswerBoxLayout-module__boxExpertVerified--Ljdgc > div.AnswerBoxLayout-module__header--2UVWr > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--margin-right-s > div > svg > use,
-#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div.AnswerBoxLayout-module__box--2yed7.AnswerBoxLayout-module__boxExpertVerified--Ljdgc > div.AnswerBoxLayout-module__header--2UVWr > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--align-items-center > div.sg-hide-for-small-only > h3 > div > div > div > div > div > svg > use
+#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div[class*="AnswerBoxLayout-module__box--2yed7"] > div[class^="AnswerBoxLayout-module__header"] > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--margin-right-s > div > svg > use,
+#main-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-answers.js-question-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div > div:nth-child(1) > div[class*="AnswerBoxLayout-module__box--2yed7"] > div[class^="AnswerBoxLayout-module__header"] > div > div.sg-flex.sg-flex--align-items-center > div.sg-flex.sg-flex--align-items-center > div.sg-hide-for-small-only > h3 > div > div > div > div > div > svg > use
 {
     color: var(--dark-global-text-color);
 }
-.AnswerBoxLayout-module__boxExpertVerified--Ljdgc {
+[class*="AnswerBoxLayout-module__boxExpertVerified"] {
     border: 2px solid var(--green-nds) !important;
 }
 
@@ -742,7 +745,7 @@ div[data-testid="answer_box_text"] img {
 }
 
 /* Pastilles avatar UNTEL ont trouvé ça utile */
-.CommunityAvatar-module__avatar--1HfE_ {
+[class*="CommunityAvatar-module__avatar"] {
     border-color: var(--dark-back-color);
 }
 
@@ -768,15 +771,15 @@ div[data-testid="looking_for_more_banner"] {
     background-color: var(--dark-back-color);
 }
 /* Text editor widgets */
-.TextEditor__editorBox--1QkjX {
+[class*="TextEditor__editorBox"]{
     background-color: black !important;
 }
 /* Text editor container */
-.TextEditor__editor--14ZAy {
+[class*="TextEditor__editor"] {
     background-color: var(--dark-light-color) !important;
 }
 /* LaTex */
-.Toolbar__equationsPreview--3h-kb {
+[class*="Toolbar__equationsPreview"] {
     background-color: var(--dark-light-color) !important;
 }
 .sg-math-symbol-icon--icon-gray-70 {
@@ -785,7 +788,7 @@ div[data-testid="looking_for_more_banner"] {
 img[data-testid="answer_editor_equations_preview_image"] {
     background-color: white !important;
 }
-.Toolbar__toolbarShelf--3Yqju {
+[class*="Toolbar__toolbarShelf"] {
     background-color: var(--dark-back-color) !important;
 }
 
@@ -1202,14 +1205,12 @@ div#content-old a.delete_account {
 }
 /* 'Mail' */
 /* Navbar */
-.Header-module__header--1fyGw, .Header-module__innerwrap--2PyoE {
-    background: var(--dark-back-color) !important;
-}
-.Header-module__subnav--1o8Ox {
-    background-color: var(--dark-back-color) !important;
-    border-bottom: 2px solid var(--dark-light-color) !important;
-}
 
+header[class^="Header-module"], div[class^="Header-module"] {
+    background:var(--dark-back-color);
+    color:var(--dark-global-text-color);
+    border-color: var(--dark-light-color)
+}
 /* ------------------------------------------------------ */
 /*                     Rank list Page                     */
 /* ------------------------------------------------------ */
@@ -1407,15 +1408,6 @@ body > div.js-page-wrapper > div > div.js-react-registration-toplayer > div > di
     background-color: #000000cc !important;
 }
 
-/* Box pre-footer */
-.section--9DHSr {
-    background: var(--dark-light-color);
-}
-
-/* Footer */
-.section--2OZ88 {
-    background: var(--dark-footer-back-color);
-}
 .cookieText--3BVBf,
 .cookieLink--3_kfI,
 .linksSectionLinkText--24NT7,
@@ -1444,3 +1436,47 @@ body > div.js-page-wrapper > div > div
 }
 
 /* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+/* MISE A JOUR 2023 -- SOLID PROVED CODE */
+
+div[class*="sg-box"] > * {
+    border-color: var(--dark-light-color);
+}
+/* Lien en bas de l'encadré du profil à droite */
+div[class*="GameBoxLink-module"]:hover {
+    background: var(--dark-light-color);
+    transition: 300ms;
+}
+/* Chart autour de la pp à droite */
+canvas[data-testid="game_box_progress_bar"] {
+    display: none;
+}
+/* Les indicateurs de points et MR */
+[class*="GameBoxStatItem-module__label"] {
+    background-color: var(--dark-light-color);
+}
+
+/* Module apercu image */
+div[class^="AttachmentsViewerImagePreview-module__imagePreview"] {
+    background-color: var(--dark-light-color);
+}
+div[class*="AttachmentsModal"] {
+    background-color: var(--dark-back-color);
+}
+
+/* Zone de l'historique */
+div[class*="QuestionActivity-module"] {
+    border-color: var(--dark-light-color)
+}
+/* Ouverture détail */
+[data-testid="question_activity_item"] > ul {
+    background: var(--dark-light-color);
+}
+
+/* "Voir plus de réponses similaires" */
+[class*="AnswerBoxLayout-module__searchEntryPoint"] {
+    display: none;
+}
