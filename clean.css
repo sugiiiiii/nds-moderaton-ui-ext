@@ -49,14 +49,9 @@
 
 /* ------------------------------------- */
 
-/* Aucune idée ? */
-/* #question-sg-layout-container > div.js-main-container.brn-qpage-layout.js-ads-screening-content > div.brn-qpage-layout__main.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.js-react-below-answers.empty\:sg-space-y-m.md\:empty\:sg-space-y-l > div.brn-qpage-next-newest-questions {
-    display: none;
-} */
-
-/* Les panels "Ton influence" et "Challenge" sur une page de question */
-#question-sg-layout-container > div.js-main-container.brn-qpage-layout.js-ads-screening-content > div.brn-qpage-layout__right.js-aside-content > div.js-react-aside-content > div:nth-child(2) > div, #question-sg-layout-container > div.js-main-container.brn-qpage-layout.js-ads-screening-content > div.brn-qpage-layout__right.js-aside-content > div.js-react-aside-content > div:nth-child(3) > div {
-    display: none;
+/* Les pubs */
+[data-testid="brainly_ads_placeholder"], .sg-space-ignore > .brn-ads-box {
+    display: none !important;
 }
 
 /* Bannière "The Brain Guide" + Challenge "Reponds à 5 questions..." */
@@ -199,6 +194,29 @@ div.moderation > .title {
     overflow: hidden;
     height: 100% !important;
 }
+
+/* Modif 02/06/24 */
+/* Pour permettre d'utiliser le bleu pour la confirmation */
+button.to-correct {
+    background-color: var(--yellow-40) !important;
+    color: var(--gray-70) !important;
+}
+div.actions {
+    margin-bottom: 1.5em;
+}
+.caption {
+    margin-bottom: 1em;
+    text-transform:capitalize;
+    font-weight: 600;
+    font-size: 18px !important;
+}
+.boxxy.text {
+    width: inherit;
+}
+.contents {
+    width: 100%;
+}
+/* Fin des modif 02/06/24 */
 
 /* Bouclier pour ouvrir la modération */
 button.moderation-start i.icon.icon-moderation {
@@ -460,6 +478,7 @@ button.reset.btn:hover i.icon.icon-remove {
     margin-bottom: 1.3em;
     border-radius: 15px !important;
     background-color: #f7f7f7 !important;
+    width: inherit;
 }
 
 #toplayer .contener-center.mod .moderation-toplayer .moderation-task.reported .boxxy.text {
@@ -817,6 +836,8 @@ input.onlylink {
     margin-bottom: 0.5em;
     margin-top: 0 !important;
 }
+
+/* Bug footer cachait contenu */
 
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */

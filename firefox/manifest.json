@@ -1,0 +1,21 @@
+{
+    "name": "NDS Updated Moderation",
+    "description": "Rendons l'interface de modération plus agréable",
+    "version": "11.6",
+    "manifest_version": 3,
+    "content_scripts": [{
+        "css": ["files/clean.css", "files/messagerie.css"],
+        "matches": ["https://nosdevoirs.fr/*", "https://eodev.com/*", "https://brainly.in/*", "https://brainly.pl/*", "https://brainly.lat/*", "https://znanija.com/*", "https://brainly.ro/*", "https://brainly.com/*"],
+        "js": ["files/js/nds-moderation-ui-ext-v0.js"]
+    }],
+    "action": {
+        "default_icon": "files/images/on.png",
+        "default_title": "NDS Update Moderation"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "kikoun.clement@gmail.com",
+        "strict_min_version": "42.0"
+    }
+}
+}
