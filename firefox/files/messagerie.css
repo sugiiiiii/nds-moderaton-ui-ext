@@ -1,0 +1,55 @@
+/* Messagerie */
+.sg-box.sg-box--light.sg-box--border.sg-box--padding-m.brn-layout-box {
+    border: transparent !important;
+}
+.brn-messages__conversations {
+    width: 380px;
+    height: 70vh !important;
+    max-width: 380px;
+}
+.dock-box {
+    height: 70vh !important;
+}
+.js-conversations-panel .sg-content-box__content--full, ul.sg-list.js-conversations.brn-messages__list {
+    height: 70vh !important;
+    max-height: 70vh !important;
+}
+
+.brn-messages__chatbox.brn-chatbox.js-chatbox {
+    height: 80vh !important;
+}
+
+.sg-layout__container.js-main-container {
+    min-width: 100% !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.brn-chatbox__chat {
+    max-height: 70vh !important;
+}
+
+/* Fix Juillet 2022 */
+.sg-box.sg-box--white.sg-box--border.sg-box--padding-m.brn-layout-box {
+    border: none;
+}
+
+#private-messages-container .sg-content-box__actions {
+    display: none;
+}
+
+.brn-chatbox__chat .sg-box.sg-box--padding-m.sg-box--blue-40 {
+    border-radius: 8px 0 8px 8px;
+}
+
+.brn-chatbox__chat .sg-box.sg-box--padding-m.sg-box--gray-40 {
+    border-radius: 0 8px 8px 8px;
+}
+
+/* Pseudo du chat ouvert */
+/* Pour permettre l'ajout des nouveaux liens */
+.sg-headline--small[title] {
+    display: contents;
+    /* Agit comme un inline-block mais laisse des margins inherit */
+}

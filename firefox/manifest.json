@@ -1,7 +1,7 @@
 {
     "name": "NDS Updated Moderation",
     "description": "Rendons l'interface de modération plus agréable",
-    "version": "11.6",
+    "version": "11.7",
     "manifest_version": 3,
     "content_scripts": [{
         "css": ["files/clean.css", "files/messagerie.css"],
@@ -15,7 +15,7 @@
     "browser_specific_settings": {
       "gecko": {
         "id": "kikoun.clement@gmail.com",
-        "strict_min_version": "42.0"
+        "strict_min_version": "58.0"
     }
 }
 }
