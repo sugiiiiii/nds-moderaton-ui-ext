@@ -1,12 +1,12 @@
 {
     "name": "NDS Updated Moderation",
     "description": "Rendons l'interface de modération plus agréable",
-    "version": "11.8",
+    "version": "11.82",
     "manifest_version": 3,
     "content_scripts": [{
         "css": ["files/clean.css", "files/messagerie.css"],
         "matches": ["https://nosdevoirs.fr/*", "https://eodev.com/*", "https://brainly.in/*", "https://brainly.pl/*", "https://brainly.lat/*", "https://znanija.com/*", "https://brainly.ro/*", "https://brainly.com/*"],
-        "js": ["files/js/nds-moderation-ui-ext-v0.js"]
+        "js": ["files/js/nds-moderation-ui.js"]
     }],
     "action": {
         "default_icon": "files/images/on.png",

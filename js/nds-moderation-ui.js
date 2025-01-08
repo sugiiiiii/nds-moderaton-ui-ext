@@ -303,12 +303,11 @@ window.addEventListener('load', function() {
     }
     
     // Sélectionner la div #moderate-task-toplayer
-    try {
-        const moderateTaskToplayerDiv = document.querySelector('#moderate-task-toplayer');
-    } catch (error) {
-        console.debug('Pas de Task Toplayer trouvé')
-    }
-      
+    // try {
+    //     const moderateTaskToplayerDiv = document.querySelector('#moderate-task-toplayer');
+    // } catch (error) {
+    //     console.debug('Pas de Task Toplayer trouvé')
+    // }
     
     // waitForElm('[data-testid="question_activity"]').then((elm) => {
     //     handleModerateTaskDisplay()
@@ -361,4 +360,111 @@ function encartOldDevoir() {
 waitForElm('div.moderation-item').then((elm) => {
     encartOldDevoir()
     console.log('✅ Encarts ajoutés');
+});
+
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+// AJOUT DU BOUTON "CONFIRMER"
+// Ajour de la v11.7 qui a été perdu lors de la v11.8, bug GitHub Desktop
+window.addEventListener('load', function() {
+    // #1 - Fonction pour confirmer un signalement
+    function ndsConfirm(devoirID, answerID) {
+        fetch("https://nosdevoirs.fr/api/28/moderation_new/accept", {
+          "referrer": `https://nosdevoirs.fr/devoir/${devoirID}`,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "body": `{"model_id":${answerID},"model_type_id":2,"schema":""}`,
+          "method": "POST",
+          "mode": "cors",
+          "credentials": "include"
+        });
+    }
+    
+    // #2 - Fonction pour styliser la réponse après confirmation
+    function confirmResponseStyle(responseDiv) {
+      const confirmButton = responseDiv.querySelector('button.js-nds-confirm');
+      confirmButton.disabled = true;
+      confirmButton.textContent = '✓';
+    
+      const reasonElements = responseDiv.querySelectorAll('.report.boxxy .reason');
+      reasonElements.forEach(element => {
+        element.style.display = 'none';
+      });
+    
+      const reporterNickSpan = responseDiv.querySelector('span.reporter.nick');
+      reporterNickSpan.textContent = 'Signalement traité avec succès !';
+      responseDiv.style.transition = 'all 300ms';
+      responseDiv.classList.remove('reported');
+    
+      // Modifier l'attribut "xlink:href" de "#answer-<ID> .sg-button__icon--m svg > use"
+      const answerID = responseDiv.classList[1].split('-')[1];
+      const useElement = responseDiv.querySelector(`#answer-${answerID} .sg-button__icon--m svg > use`);
+      useElement.setAttribute('xlink:href', '#icon-report_flag_outlined');
+    
+      // Ajouter la classe "sg-icon--icon-gray-50" à "#answer-<ID> .sg-button__icon--m > div > *"
+      const iconElements = responseDiv.querySelectorAll(`#answer-${answerID} .sg-button__icon--m > div > *`);
+      iconElements.forEach(element => {
+        element.classList.add('sg-icon--icon-gray-50');
+      });
+    }
+    
+    // #3 - Fonction pour ajouter le bouton "Confirmer"
+    function addConfirmButton(responseDiv) {
+      const devoirID = document.querySelector('.moderation-task').classList[1].split('-')[1];
+      const answerID = responseDiv.classList[1].split('-')[1];
+    
+      const confirmButton = document.createElement('button');
+      confirmButton.classList.add("btn", "btn-mini", "btn-info", "js-nds-confirm");
+      confirmButton.textContent = 'Confirmer';
+      confirmButton.addEventListener('click', () => {
+        ndsConfirm(devoirID, answerID);
+        confirmResponseStyle(responseDiv);
+      });
+    
+      // Sélectionner la div "actions pull-right"
+      const actionsDiv = responseDiv.querySelector('.actions.pull-right');
+      actionsDiv.insertBefore(confirmButton, actionsDiv.firstChild);
+    }
+    
+    // #4 - Fonction pour lancer le processus
+    function handleModerateTaskDisplay() {
+      // Sélectionner toutes les réponses dans la fenêtre de modération
+      const responsesDivs = document.querySelectorAll('.moderation-response');
+    
+      responsesDivs.forEach(responseDiv => {
+        if (responseDiv.classList.contains('reported')) {
+            addConfirmButton(responseDiv);
+        }
+      });
+        // #Annexe · Suppression "Commentaires" si vide
+        commSections = document.querySelectorAll(".moderation-comments")
+        commSections.forEach(function(section) {
+            console.log(section.childElementCount);
+            if (section.childElementCount <= 1) {
+                section.style.display = "none";
+            }
+        });
+    }
+    
+    // Sélectionner la div #moderate-task-toplayer
+    const moderateTaskToplayerDiv = document.querySelector('#moderate-task-toplayer');
+    
+    // Créer un observateur de mutation
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+            const displayStyle = moderateTaskToplayerDiv.style.display;
+            if (displayStyle === 'block') {
+              handleModerateTaskDisplay();
+              console.log('✅ Panel contextuel de modération enrichi');
+            }
+          }
+        });
+    });
+    
+    // Configuration de l'observateur
+    const config = { attributes: true, childList: false, subtree: false };
+    
+    // Commencer à observer la div #moderate-task-toplayer
+    observer.observe(moderateTaskToplayerDiv, config);
 });
