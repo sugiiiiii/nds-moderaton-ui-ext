@@ -1,6 +1,6 @@
 /* VERSION DE L'EXTENSION */
 .sg-content-box__title h3::after {
-    content: "v11.7";
+    content: "v11.8 🌵";
     font-weight:100;
     color:gray;
     display: block;
@@ -930,4 +930,42 @@ div#footer {
 }
 .brn-moderation-panel__content {
     border-radius: 12px;
+}
+
+/* Encart anciens devoirs */
+div.nds-vieux {
+    outline: 2px solid var(--yellow-nds);
+}
+div.nds-vieux::before  {
+    content: "Ancien contenu";
+    color: white;
+    background: var(--yellow-nds);
+    position: absolute;
+    width: fit-content;
+    border-radius: 4px 4px 0px 0px;
+    margin-top: -1.2em;
+    padding-inline: .7em;
+    margin-left: .5em;
+}
+
+/* Update 11.8 */
+/* Logo "Nodevoirs MODS */
+img.mint-home-button__logo-big {
+    content: url("https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/readme/logo.svg");
+}
+img.sg-logo__image {
+    content: url("https://raw.githubusercontent.com/sugiiiiii/nds-moderaton-ui-ext/main/readme/logo.svg");
+}
+/* Le rainbow border */
+.brn-moderation-panel__button {
+    border: solid 3px transparent !important;
+    border-radius: 12px !important;
+    padding:1.2em !important;
+    background:
+      linear-gradient( #000000, #000000) padding-box,
+      linear-gradient(92.7deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) border-box !important;
+    
+}
+.brn-moderation-panel__button:hover {
+    transform: scale(1.15);
 }

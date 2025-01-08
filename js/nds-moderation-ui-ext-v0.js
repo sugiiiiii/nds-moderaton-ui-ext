@@ -303,7 +303,11 @@ window.addEventListener('load', function() {
     }
     
     // Sélectionner la div #moderate-task-toplayer
-    const moderateTaskToplayerDiv = document.querySelector('#moderate-task-toplayer');
+    try {
+        const moderateTaskToplayerDiv = document.querySelector('#moderate-task-toplayer');
+    } catch (error) {
+        console.debug('Pas de Task Toplayer trouvé')
+    }
       
     
     // waitForElm('[data-testid="question_activity"]').then((elm) => {
@@ -329,4 +333,32 @@ window.addEventListener('load', function() {
     
     // Commencer à observer la div #moderate-task-toplayer
     observer.observe(moderateTaskToplayerDiv, config);
+});
+
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
+
+// Ajout d'un encart "Ancien devoir" sur les devoirs avant 2022
+function encartOldDevoir() {
+    const moderationItems = document.querySelectorAll('.moderation-item');
+
+    // Parcourir chaque élément "moderation-item"
+    moderationItems.forEach(item => {
+    const footerFirstRow = item.querySelector('.footer .row:first-child .span:last-child');
+    const dateString = footerFirstRow.textContent.trim();
+    
+    // Convertir la date en objet Date
+    const date = new Date(dateString);
+    
+    if (date.getFullYear() < 2022) {
+        // Ajouter la classe "nds-vieux" à la div.moderation-item
+        item.classList.add('nds-vieux');
+    }
+    });
+}
+
+waitForElm('div.moderation-item').then((elm) => {
+    encartOldDevoir()
+    console.log('✅ Encarts ajoutés');
 });
